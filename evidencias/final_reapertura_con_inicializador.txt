@@ -1,0 +1,4 @@
+Prueba real posterior a la reapertura y aplicación del inicializador IPv6 estático de compatibilidad mediante MCP.
+PC7 → 2001:1200:EC13:10::80: CONECTIVIDAD OK
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)
+No acredita persistencia SLAAC autónoma.

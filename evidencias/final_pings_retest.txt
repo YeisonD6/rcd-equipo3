@@ -1,0 +1,14 @@
+PC4 → 10.3.81.17: CONECTIVIDAD OK
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+PC7 → 10.3.80.14: CONECTIVIDAD OK
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+PC7 → 10.3.10.50: CONECTIVIDAD OK
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+PC4 → 2001:1200:EC13:10::80: CONECTIVIDAD OK
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+PC7 → 2001:1200:EC13:10::80: CONECTIVIDAD OK
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),

@@ -1,0 +1,78 @@
+show crypto ipsec sa
+
+interface: Serial1/0
+    Crypto map tag: RCD3-MAP, local addr 86.106.79.1
+
+   protected vrf: (none)
+   local  ident (addr/mask/prot/port): (10.3.0.0/255.255.128.0/0/0)
+   remote  ident (addr/mask/prot/port): (10.3.81.0/255.255.255.0/0/0)
+   current_peer 86.106.79.26 port 500
+    PERMIT, flags={origin_is_acl,}
+   #pkts encaps: 361, #pkts encrypt: 361, #pkts digest: 0
+   #pkts decaps: 367, #pkts decrypt: 367, #pkts verify: 0
+   #pkts compressed: 0, #pkts decompressed: 0
+   #pkts not compressed: 0, #pkts compr. failed: 0
+   #pkts not decompressed: 0, #pkts decompress failed: 0
+   #send errors 1, #recv errors 0
+
+     local crypto endpt.: 86.106.79.1, remote crypto endpt.:86.106.79.26
+     path mtu 1500, ip mtu 1500, ip mtu idb Serial1/0
+     current outbound spi: 0xCEDDB815(3470637077)
+
+     inbound esp sas:
+      spi: 0x03F1BB4E(66173774)
+        transform: esp-aes 256 esp-sha-hmac ,
+        in use settings ={Tunnel, }
+        conn id: 2007, flow_id: FPGA:1, crypto map: RCD3-MAP
+        sa timing: remaining key lifetime (k/sec): (4525504/3268)
+        IV size: 16 bytes
+        replay detection support: N
+        Status: ACTIVE
+
+     inbound ah sas:
+
+     inbound pcp sas:
+
+     outbound esp sas:
+      spi: 0xCEDDB815(3470637077)
+        transform: esp-aes 256 esp-sha-hmac ,
+        in use settings ={Tunnel, }
+        conn id: 2008, flow_id: FPGA:1, crypto map: RCD3-MAP
+        sa timing: remaining key lifetime (k/sec): (4525504/3268)
+        IV size: 16 bytes
+        replay detection support: N
+        Status: ACTIVE
+
+     outbound ah sas:
+
+     outbound pcp sas:
+
+   local  ident (addr/mask/prot/port): (10.3.0.0/255.255.128.0/0/0)
+   remote  ident (addr/mask/prot/port): (10.3.128.0/255.255.128.0/0/0)
+   current_peer 86.106.79.26 port 500
+    PERMIT, flags={origin_is_acl,}
+   #pkts encaps: 0, #pkts encrypt: 0, #pkts digest: 0
+   #pkts decaps: 0, #pkts decrypt: 0, #pkts verify: 0
+   #pkts compressed: 0, #pkts decompressed: 0
+   #pkts not compressed: 0, #pkts compr. failed: 0
+   #pkts not decompressed: 0, #pkts decompress failed: 0
+   #send errors 0, #recv errors 0
+
+     local crypto endpt.: 86.106.79.1, remote crypto endpt.:86.106.79.26
+     path mtu 1500, ip mtu 1500, ip mtu idb Serial1/0
+     current outbound spi: 0x0(0)
+
+     inbound esp sas:
+
+     inbound ah sas:
+
+     inbound pcp sas:
+
+     outbound esp sas:
+
+     outbound ah sas:
+
+     outbound pcp sas:
+
+R1_BOG#
+R1_BOG#

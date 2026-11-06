@@ -1,0 +1,14 @@
+Exportación startup-config real vía pt_backup_config; no es transcripción show running-config.
+{
+  "found": true,
+  "supported": true,
+  "model": "2811",
+  "hostname": "ISP_FL",
+  "serial": "FTX10171MI6-",
+  "config_register": 8450,
+  "uptime": 370895,
+  "boot_systems": "",
+  "startup_config": "!\nversion 12.4\nno service timestamps log datetime msec\nno service timestamps debug datetime msec\nservice password-encryption\n!\nhostname ISP_FL\n!\n!\n!\nenable secret 5 $1$mERr$j4jSz8tq8MB380Pd.zgTx/\n!\n!\n!\n!\n!\n!\nno ip cef\nno ipv6 cef\n!\n!\n!\nusername admin privilege 15 secret 5 $1$mERr$DTmHtGvJD1T.OQV9BxisU1\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip ssh version 2\nip domain-name mvydjdr.net\n!\n!\nspanning-tree mode pvst\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n no ip address\n ipv6 address 2001:1200:ED13::4/128\n!\ninterface FastEthernet0/0\n no ip address\n duplex auto\n speed auto\n shutdown\n!\ninterface FastEthernet0/1\n no ip address\n duplex auto\n speed auto\n shutdown\n!\ninterface Serial1/0\n description ISP_BOG\n ip address 86.106.79.18 255.255.255.252\n clock rate 64000\n!\ninterface Serial1/1\n description ISP_ESP\n ip address 86.106.79.14 255.255.255.252\n!\ninterface Serial1/2\n description ISP_NET\n ip address 86.106.79.22 255.255.255.252\n!\ninterface Serial1/3\n no ip address\n clock rate 2000000\n shutdown\n!\ninterface Vlan1\n no ip address\n shutdown\n!\nrouter eigrp 3\n redistribute ospf 3 metric 10000 100 255 1 1500 \n network 86.106.79.20 0.0.0.3\n no auto-summary\n!\nrouter ospf 3\n router-id 3.3.3.4\n log-adjacency-changes\n redistribute eigrp 3 subnets \n network 86.106.79.12 0.0.0.3 area 0\n network 86.106.79.16 0.0.0.3 area 0\n distance ospf external 175\n!\nip classless\n!\nip flow-export version 9\n!\n!\naccess-list 10 permit 86.106.79.0 0.0.0.255\n!\nbanner motd #ACCESO AUTORIZADO - PROYECTO RCD EQUIPO 3#\n!\n!\n!\n!\n!\nline con 0\n!\nline aux 0\n!\nline vty 0 4\n login local\n transport input ssh\n!\n!\n!\nend",
+  "startup_lines": 119,
+  "summary": "119 línea(s) de startup-config de 'ISP_FL' (2811, serial FTX10171MI6-)."
+}

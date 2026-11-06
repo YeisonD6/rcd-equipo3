@@ -1,0 +1,12 @@
+{
+  "healthy": true,
+  "down_links": [],
+  "cabled_without_ip": [
+    {
+      "device": "R1_BOG",
+      "port": "FastEthernet0/0"
+    }
+  ],
+  "duplicate_ips": {},
+  "summary": "✅ Topología saludable."
+}

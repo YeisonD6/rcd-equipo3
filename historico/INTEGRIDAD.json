@@ -1,0 +1,14 @@
+{
+  "archivo_pkt_bytes": 227791,
+  "configuraciones_running": 13,
+  "hojas_xlsx": [
+    "Resumen",
+    "Direccionamiento",
+    "WAN",
+    "Inventario",
+    "Pruebas",
+    "Rubrica"
+  ],
+  "errores_celdas_xlsx": [],
+  "limites": "Requiere inicializador IPv6 tras abrir. SNMP GET/SET pendiente. Cifrado protocolo 41 no demostrado. No acredita nivel Experto completo."
+}

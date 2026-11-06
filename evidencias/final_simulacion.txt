@@ -1,0 +1,4647 @@
+{
+  "frames": 81,
+  "by_status": {
+    "accepted": 9,
+    "buffered": 1,
+    "dropped": 30,
+    "sent": 41
+  },
+  "by_device": {
+    "DHCP_Server": 1,
+    "DNS_Server": 2,
+    "ISP_BOG": 3,
+    "ISP_ESP": 2,
+    "ISP_FL": 4,
+    "ISP_NET": 3,
+    "MLSW_MAD": 8,
+    "PC1": 1,
+    "PC2": 1,
+    "PC3": 1,
+    "PC4": 1,
+    "PC5": 1,
+    "PC6": 1,
+    "PC7": 1,
+    "PC8": 1,
+    "Printer0": 1,
+    "Printer1": 1,
+    "Printer2": 1,
+    "Printer3": 1,
+    "R1_BOG": 8,
+    "R2_ESP": 3,
+    "SW1_BOG": 4,
+    "SW2_BOG": 4,
+    "SW3_BOG": 9,
+    "SW4_MAD": 4,
+    "SW5_MAD": 8,
+    "SW_DMZ": 2,
+    "Tracker_Server": 2,
+    "Web_Server": 2
+  },
+  "failures": [
+    {
+      "device": "Web_Server",
+      "status": "dropped",
+      "destination": "224.0.0.10",
+      "traffic": "type9",
+      "reason": "The destination IP is not the broadcast address and it does not match the port's IP address. The device drops the packet."
+    },
+    {
+      "device": "DNS_Server",
+      "status": "dropped",
+      "destination": "224.0.0.10",
+      "traffic": "type9",
+      "reason": "The destination IP is not the broadcast address and it does not match the port's IP address. The device drops the packet."
+    },
+    {
+      "device": "Tracker_Server",
+      "status": "dropped",
+      "destination": "224.0.0.10",
+      "traffic": "type9",
+      "reason": "The destination IP is not the broadcast address and it does not match the port's IP address. The device drops the packet."
+    },
+    {
+      "device": "SW3_BOG",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "GigabitEthernet0/1 is blocked by STP. The device drops the frame."
+    },
+    {
+      "device": "PC2",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "PC3",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "PC4",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "SW3_BOG",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "GigabitEthernet0/1 is blocked by STP. The device drops the frame."
+    },
+    {
+      "device": "SW3_BOG",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+    },
+    {
+      "device": "SW3_BOG",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "GigabitEthernet0/1 is blocked by STP. The device drops the frame."
+    },
+    {
+      "device": "DHCP_Server",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "Printer0",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "Printer1",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "SW5_MAD",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+    },
+    {
+      "device": "SW5_MAD",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "GigabitEthernet0/2 is blocked by STP. The device drops the frame."
+    },
+    {
+      "device": "Printer2",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "SW5_MAD",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "GigabitEthernet0/2 is blocked by STP. The device drops the frame."
+    },
+    {
+      "device": "Printer3",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "PC6",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "SW5_MAD",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "GigabitEthernet0/2 is blocked by STP. The device drops the frame."
+    },
+    {
+      "device": "PC7",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "SW3_BOG",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "GigabitEthernet0/1 is blocked by STP. The device drops the frame."
+    },
+    {
+      "device": "PC1",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "SW3_BOG",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+    },
+    {
+      "device": "PC5",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "SW5_MAD",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "GigabitEthernet0/2 is blocked by STP. The device drops the frame."
+    },
+    {
+      "device": "PC8",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "Web_Server",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "DNS_Server",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    },
+    {
+      "device": "Tracker_Server",
+      "status": "dropped",
+      "destination": "FF02::5",
+      "traffic": "type44",
+      "reason": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+    }
+  ],
+  "clean": false,
+  "total_in_event_list": 81,
+  "simulation_mode": true,
+  "trace": [
+    {
+      "index": 0,
+      "device": "R1_BOG",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "FastEthernet0/1",
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 409745,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an EIGRP Hello packet on FastEthernet0/1."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IP packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The outgoing port has an outbound traffic access-list with an ID of WEB-DMZ4, but the packet is locally generated. The device permits the packet without checking against the access-list."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is a multicast. The ARP process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an Ethernet frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/1 sends out the frame."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "sent"
+    },
+    {
+      "index": 1,
+      "device": "SW_DMZ",
+      "previous_device": "R1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/1",
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 409745,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/1 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/2 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/3 sends out the frame."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "sent"
+    },
+    {
+      "index": 2,
+      "device": "Web_Server",
+      "previous_device": "SW_DMZ",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 409746,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP is not the broadcast address and it does not match the port's IP address. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "dropped"
+    },
+    {
+      "index": 3,
+      "device": "DNS_Server",
+      "previous_device": "SW_DMZ",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 409746,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP is not the broadcast address and it does not match the port's IP address. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "dropped"
+    },
+    {
+      "index": 4,
+      "device": "Tracker_Server",
+      "previous_device": "SW_DMZ",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 409746,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP is not the broadcast address and it does not match the port's IP address. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "dropped"
+    },
+    {
+      "index": 5,
+      "device": "ISP_FL",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "Serial1/2",
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 409825,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an EIGRP Hello packet on Serial1/2."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IP packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the packet into an HDLC frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "Serial1/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "sent"
+    },
+    {
+      "index": 6,
+      "device": "ISP_NET",
+      "previous_device": "ISP_FL",
+      "in_port": "Serial1/2",
+      "out_port": null,
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 409825,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": true,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "Serial1/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device de-encapsulates the payload from the HDLC frame and sends it to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP address is a broadcast or multicast address. The device dispatches the packet to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device receives an EIGRP packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The EIGRP packet is a Hello packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The Hello packet is from an existing neighbor. The device resets the timers for this neighbor."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "accepted"
+    },
+    {
+      "index": 7,
+      "device": "R1_BOG",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "FastEthernet0/0",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410060,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on FastEthernet0/0.80."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an IEEE 802.1Q frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/0 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 8,
+      "device": "SW1_BOG",
+      "previous_device": "R1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/24",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410060,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/24 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 9,
+      "device": "SW3_BOG",
+      "previous_device": "SW1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410061,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 is blocked by STP. The device drops the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 10,
+      "device": "SW2_BOG",
+      "previous_device": "SW1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/3",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410061,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/3 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 11,
+      "device": "PC2",
+      "previous_device": "SW2_BOG",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410062,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 12,
+      "device": "SW3_BOG",
+      "previous_device": "SW2_BOG",
+      "in_port": "GigabitEthernet0/2",
+      "out_port": "FastEthernet0/1",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410062,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/1 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 13,
+      "device": "PC3",
+      "previous_device": "SW3_BOG",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410063,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 14,
+      "device": "PC4",
+      "previous_device": "SW3_BOG",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410063,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 15,
+      "device": "ISP_ESP",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "Serial1/1",
+      "source": "",
+      "destination": "224.0.0.5",
+      "sim_time": 410065,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on Serial1/1."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IP packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the packet into an HDLC frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "Serial1/1 sends out the frame."
+        }
+      ],
+      "traffic_type": "type12",
+      "status": "sent"
+    },
+    {
+      "index": 16,
+      "device": "ISP_FL",
+      "previous_device": "ISP_ESP",
+      "in_port": "Serial1/1",
+      "out_port": null,
+      "source": "",
+      "destination": "224.0.0.5",
+      "sim_time": 410065,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": true,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "Serial1/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device de-encapsulates the payload from the HDLC frame and sends it to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP address is a broadcast or multicast address. The device dispatches the packet to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device receives an OSPF packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The OSPF packet is a Hello packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The Hello packet is from an existing neighbor. The device resets the timers for this neighbor."
+        }
+      ],
+      "traffic_type": "type12",
+      "status": "accepted"
+    },
+    {
+      "index": 17,
+      "device": "MLSW_MAD",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "GigabitEthernet1/0/1",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410066,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on GigabitEthernet1/0/1."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an Ethernet frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet1/0/1 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 18,
+      "device": "R2_ESP",
+      "previous_device": "MLSW_MAD",
+      "in_port": "FastEthernet0/0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410066,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": true,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0/0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The packet is coming from an outside network. The device looks up its NAT table for necessary translations."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP address is a broadcast or multicast address. The device dispatches the packet to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device receives an OSPF packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The OSPF packet is a Hello packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The Hello packet is from an existing neighbor. The device resets the timers for this neighbor."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "accepted"
+    },
+    {
+      "index": 19,
+      "device": "R1_BOG",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "FastEthernet0/0",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410069,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on FastEthernet0/0.99."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an Ethernet frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/0 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 20,
+      "device": "SW1_BOG",
+      "previous_device": "R1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/24",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410069,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address does not exist in the MAC table of Switch. Switch adds a new MAC entry to its table."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/24 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 21,
+      "device": "SW3_BOG",
+      "previous_device": "SW1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410070,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 is blocked by STP. The device drops the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 22,
+      "device": "SW2_BOG",
+      "previous_device": "SW1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "GigabitEthernet0/2",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410070,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 23,
+      "device": "ISP_FL",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "Serial1/0",
+      "source": "",
+      "destination": "224.0.0.5",
+      "sim_time": 410071,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on Serial1/0."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IP packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the packet into an HDLC frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "Serial1/0 sends out the frame."
+        }
+      ],
+      "traffic_type": "type12",
+      "status": "sent"
+    },
+    {
+      "index": 24,
+      "device": "ISP_BOG",
+      "previous_device": "ISP_FL",
+      "in_port": "Serial1/2",
+      "out_port": null,
+      "source": "",
+      "destination": "224.0.0.5",
+      "sim_time": 410071,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": true,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "Serial1/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device de-encapsulates the payload from the HDLC frame and sends it to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP address is a broadcast or multicast address. The device dispatches the packet to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device receives an OSPF packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The OSPF packet is a Hello packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The Hello packet is from an existing neighbor. The device resets the timers for this neighbor."
+        }
+      ],
+      "traffic_type": "type12",
+      "status": "accepted"
+    },
+    {
+      "index": 25,
+      "device": "SW3_BOG",
+      "previous_device": "SW2_BOG",
+      "in_port": "GigabitEthernet0/2",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410071,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 26,
+      "device": "R1_BOG",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "Serial1/0",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410072,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on Tunnel0."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The packet received on Tunnel0 needs to be encapsulated in Ipv4 Header with the protocol field set to 41."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IP packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device looks up the destination IP address in the routing table."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The routing table finds a routing entry to the destination IP address."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination network can be reached via 86.106.79.2."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the packet into an HDLC frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "Serial1/0 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 27,
+      "device": "ISP_BOG",
+      "previous_device": "R1_BOG",
+      "in_port": "Serial1/0",
+      "out_port": "Serial1/1",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410072,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "Serial1/0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device de-encapsulates the payload from the HDLC frame and sends it to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device looks up the destination IP address in the routing table."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The routing table finds a routing entry to the destination IP address."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination network can be reached via 86.106.79.6."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device decrements the TTL on the packet."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the packet into an HDLC frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "Serial1/1 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 28,
+      "device": "R1_BOG",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "FastEthernet0/0",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410073,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on FastEthernet0/0.40."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an IEEE 802.1Q frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/0 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 29,
+      "device": "SW1_BOG",
+      "previous_device": "R1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/24",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410073,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/24 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 30,
+      "device": "ISP_NET",
+      "previous_device": "ISP_BOG",
+      "in_port": "Serial1/0",
+      "out_port": "Serial1/1",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410073,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "Serial1/0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device de-encapsulates the payload from the HDLC frame and sends it to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device looks up the destination IP address in the routing table."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The routing table finds a routing entry to the destination IP address."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination network can be reached via 86.106.79.10."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device decrements the TTL on the packet."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the packet into an HDLC frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "Serial1/1 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 31,
+      "device": "R2_ESP",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "FastEthernet0/0",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410074,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on FastEthernet0/0."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an Ethernet frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/0 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 32,
+      "device": "MLSW_MAD",
+      "previous_device": "R2_ESP",
+      "in_port": "GigabitEthernet1/0/1",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410074,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": true,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet1/0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The packet is coming from an outside network. The device looks up its NAT table for necessary translations."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP address is a broadcast or multicast address. The device dispatches the packet to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device receives an OSPF packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The OSPF packet is a Hello packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The Hello packet is from an existing neighbor. The device resets the timers for this neighbor."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "accepted"
+    },
+    {
+      "index": 33,
+      "device": "SW3_BOG",
+      "previous_device": "SW1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410074,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 is blocked by STP. The device drops the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 34,
+      "device": "SW2_BOG",
+      "previous_device": "SW1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/1",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410074,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/1 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 35,
+      "device": "ISP_ESP",
+      "previous_device": "ISP_NET",
+      "in_port": "Serial1/0",
+      "out_port": "Serial1/2",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410074,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "Serial1/0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device de-encapsulates the payload from the HDLC frame and sends it to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device looks up the destination IP address in the routing table."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The routing table finds a routing entry to the destination IP address."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination network is directly connected. The device sets destination as the next-hop."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device decrements the TTL on the packet."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the packet into an HDLC frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "Serial1/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 36,
+      "device": "DHCP_Server",
+      "previous_device": "SW2_BOG",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410075,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 37,
+      "device": "SW3_BOG",
+      "previous_device": "SW2_BOG",
+      "in_port": "GigabitEthernet0/2",
+      "out_port": "FastEthernet0/3",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410075,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/3 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/4 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 38,
+      "device": "R2_ESP",
+      "previous_device": "ISP_ESP",
+      "in_port": "Serial1/0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410075,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": true,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "Serial1/0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device de-encapsulates the payload from the HDLC frame and sends it to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The receiving port has an inbound traffic access-list with an ID of SNMP-INTERNAL. The device checks the packet against the access-list."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The packet matches the criteria of the following statement: permit ip any any. The packet is permitted."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP address matches the IP address of one of the interfaces. The device dispatches the packet to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The protocol field in the Ip Header is 41. The IPv4 header of the packet is removed and sent to port Tunnel0."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The packet received on Tunnel0 sent up to upper OSI layers."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The packet is coming from an outside network. The device looks up its NAT table for necessary translations."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP address is a broadcast or multicast address. The device dispatches the packet to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device receives an OSPF packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The OSPF packet is a Hello packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The Hello packet is from an existing neighbor. The device resets the timers for this neighbor."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "accepted"
+    },
+    {
+      "index": 39,
+      "device": "MLSW_MAD",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "GigabitEthernet1/0/2",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410077,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on Vlan99."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The Multilayer Switch uses the active VLAN interface as the outgoing VLAN number."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Multilayer Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet1/0/2 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet1/0/3 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 40,
+      "device": "Printer0",
+      "previous_device": "SW3_BOG",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410076,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 41,
+      "device": "Printer1",
+      "previous_device": "SW3_BOG",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410076,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 42,
+      "device": "MLSW_MAD",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410077,
+      "transit_time": 0,
+      "sent": false,
+      "accepted": false,
+      "dropped": false,
+      "buffered": true,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on Vlan40."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The Multilayer Switch uses the active VLAN interface as the outgoing VLAN number."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Multilayer Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "The port GigabitEthernet1/0/2 is sending another frame at this time. The device buffers the frame to be sent later."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "The port GigabitEthernet1/0/3 is sending another frame at this time. The device buffers the frame to be sent later."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "buffered"
+    },
+    {
+      "index": 43,
+      "device": "SW4_MAD",
+      "previous_device": "MLSW_MAD",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "GigabitEthernet0/2",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410077,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address does not exist in the MAC table of Switch. Switch adds a new MAC entry to its table."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 44,
+      "device": "SW5_MAD",
+      "previous_device": "MLSW_MAD",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410077,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 45,
+      "device": "MLSW_MAD",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "GigabitEthernet1/0/2",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410078,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "The device takes out this frame from the buffer and sends it."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet1/0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 46,
+      "device": "MLSW_MAD",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "GigabitEthernet1/0/3",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410078,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "The device takes out this frame from the buffer and sends it."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet1/0/3 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 47,
+      "device": "SW5_MAD",
+      "previous_device": "SW4_MAD",
+      "in_port": "GigabitEthernet0/2",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410078,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 is blocked by STP. The device drops the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 48,
+      "device": "SW4_MAD",
+      "previous_device": "MLSW_MAD",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/3",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410078,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address does not exist in the MAC table of Switch. Switch adds a new MAC entry to its table."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/3 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 49,
+      "device": "SW5_MAD",
+      "previous_device": "MLSW_MAD",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/3",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410078,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/3 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 50,
+      "device": "Printer2",
+      "previous_device": "SW4_MAD",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410079,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 51,
+      "device": "SW5_MAD",
+      "previous_device": "SW4_MAD",
+      "in_port": "GigabitEthernet0/2",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410079,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 is blocked by STP. The device drops the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 52,
+      "device": "Printer3",
+      "previous_device": "SW5_MAD",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410079,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 53,
+      "device": "MLSW_MAD",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "GigabitEthernet1/0/2",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410087,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on Vlan80."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The Multilayer Switch uses the active VLAN interface as the outgoing VLAN number."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Multilayer Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet1/0/2 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet1/0/3 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 54,
+      "device": "SW4_MAD",
+      "previous_device": "MLSW_MAD",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/2",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410087,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address does not exist in the MAC table of Switch. Switch adds a new MAC entry to its table."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/2 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 55,
+      "device": "SW5_MAD",
+      "previous_device": "MLSW_MAD",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/1",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410087,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/1 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 56,
+      "device": "R1_BOG",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "FastEthernet0/0",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410088,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on FastEthernet0/0.35."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an IEEE 802.1Q frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/0 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 57,
+      "device": "SW1_BOG",
+      "previous_device": "R1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/24",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410088,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/24 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 58,
+      "device": "PC6",
+      "previous_device": "SW4_MAD",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410088,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 59,
+      "device": "SW5_MAD",
+      "previous_device": "SW4_MAD",
+      "in_port": "GigabitEthernet0/2",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410088,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 is blocked by STP. The device drops the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 60,
+      "device": "PC7",
+      "previous_device": "SW5_MAD",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410088,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 61,
+      "device": "SW3_BOG",
+      "previous_device": "SW1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410089,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 is blocked by STP. The device drops the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 62,
+      "device": "SW2_BOG",
+      "previous_device": "SW1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/2",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410089,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address does not exist in the MAC table of Switch. Switch adds a new MAC entry to its table."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/2 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 63,
+      "device": "PC1",
+      "previous_device": "SW2_BOG",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410090,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 64,
+      "device": "SW3_BOG",
+      "previous_device": "SW2_BOG",
+      "in_port": "GigabitEthernet0/2",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410090,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 65,
+      "device": "MLSW_MAD",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "GigabitEthernet1/0/2",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410096,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on Vlan35."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The Multilayer Switch uses the active VLAN interface as the outgoing VLAN number."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Multilayer Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet1/0/2 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet1/0/3 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 66,
+      "device": "SW4_MAD",
+      "previous_device": "MLSW_MAD",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/1",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410096,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address does not exist in the MAC table of Switch. Switch adds a new MAC entry to its table."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/1 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "GigabitEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 67,
+      "device": "SW5_MAD",
+      "previous_device": "MLSW_MAD",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/2",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410096,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 68,
+      "device": "PC5",
+      "previous_device": "SW4_MAD",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410097,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 69,
+      "device": "SW5_MAD",
+      "previous_device": "SW4_MAD",
+      "in_port": "GigabitEthernet0/2",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410097,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 is blocked by STP. The device drops the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 70,
+      "device": "PC8",
+      "previous_device": "SW5_MAD",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410097,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 71,
+      "device": "R1_BOG",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "FastEthernet0/1",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410104,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an OSPF Hello packet on FastEthernet0/1."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IPv6 packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device sets the TTL on the packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The outgoing port has an outbound traffic access-list with an ID of WEB-DMZ, but the packet is locally generated. The device permits the packet without checking against the access-list."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The next-hop IP address is multicast address. The ND Process sets the frame's destination MAC address to a multicast MAC address."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the PDU into an Ethernet frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/1 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 72,
+      "device": "SW_DMZ",
+      "previous_device": "R1_BOG",
+      "in_port": "GigabitEthernet0/1",
+      "out_port": "FastEthernet0/1",
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410104,
+      "transit_time": 1,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/1 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame destination MAC address is broadcast. The Switch processes the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device does not have a service that accepts this frame. It drops the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "This is a broadcast frame. The Switch sends out the frame to all ports in the same VLAN except the receiving port."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/1 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/2 sends out the frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "FastEthernet0/3 sends out the frame."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "sent"
+    },
+    {
+      "index": 73,
+      "device": "Web_Server",
+      "previous_device": "SW_DMZ",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410105,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 74,
+      "device": "DNS_Server",
+      "previous_device": "SW_DMZ",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410105,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 75,
+      "device": "Tracker_Server",
+      "previous_device": "SW_DMZ",
+      "in_port": "FastEthernet0",
+      "out_port": null,
+      "source": "",
+      "destination": "FF02::5",
+      "sim_time": 410105,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": false,
+      "dropped": true,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "FastEthernet0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The port is not configured to be in this multicast group: FF02::5. The device drops the packet."
+        }
+      ],
+      "traffic_type": "type44",
+      "status": "dropped"
+    },
+    {
+      "index": 76,
+      "device": "ISP_NET",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "Serial1/2",
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 410235,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an EIGRP Hello packet on Serial1/2."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IP packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the packet into an HDLC frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "Serial1/2 sends out the frame."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "sent"
+    },
+    {
+      "index": 77,
+      "device": "ISP_FL",
+      "previous_device": "ISP_NET",
+      "in_port": "Serial1/2",
+      "out_port": null,
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 410235,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": true,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "Serial1/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device de-encapsulates the payload from the HDLC frame and sends it to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP address is a broadcast or multicast address. The device dispatches the packet to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device receives an EIGRP packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The EIGRP packet is a Hello packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The Hello packet is from an existing neighbor. The device resets the timers for this neighbor."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "accepted"
+    },
+    {
+      "index": 78,
+      "device": "ISP_BOG",
+      "previous_device": null,
+      "in_port": null,
+      "out_port": "Serial1/0",
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 410290,
+      "transit_time": 0,
+      "sent": true,
+      "accepted": false,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device multicasts out an EIGRP Hello packet on Serial1/0."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The device encapsulates the data into an IP packet."
+        },
+        {
+          "layer": 3,
+          "inbound": false,
+          "description": "The destination IP address is a broadcast or multicast address. The device sets the destination address as the next-hop."
+        },
+        {
+          "layer": 2,
+          "inbound": false,
+          "description": "The device encapsulates the packet into an HDLC frame."
+        },
+        {
+          "layer": 1,
+          "inbound": false,
+          "description": "Serial1/0 sends out the frame."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "sent"
+    },
+    {
+      "index": 79,
+      "device": "R1_BOG",
+      "previous_device": "ISP_BOG",
+      "in_port": "Serial1/0",
+      "out_port": null,
+      "source": "",
+      "destination": "224.0.0.10",
+      "sim_time": 410290,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": true,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "Serial1/0 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device de-encapsulates the payload from the HDLC frame and sends it to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The receiving port has an inbound traffic access-list with an ID of SNMP-INTERNAL. The device checks the packet against the access-list."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The packet matches the criteria of the following statement: permit ip any any. The packet is permitted."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The destination IP address is a broadcast or multicast address. The device dispatches the packet to the upper layer."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The device receives an EIGRP packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The EIGRP packet is a Hello packet."
+        },
+        {
+          "layer": 3,
+          "inbound": true,
+          "description": "The Hello packet is from an existing neighbor. The device resets the timers for this neighbor."
+        }
+      ],
+      "traffic_type": "type9",
+      "status": "accepted"
+    },
+    {
+      "index": 80,
+      "device": "SW3_BOG",
+      "previous_device": "SW2_BOG",
+      "in_port": "GigabitEthernet0/2",
+      "out_port": null,
+      "source": "",
+      "destination": "SSTP Multicast Address",
+      "sim_time": 410505,
+      "transit_time": 1,
+      "sent": false,
+      "accepted": true,
+      "dropped": false,
+      "buffered": false,
+      "in_transit": false,
+      "collided_at_device": false,
+      "collided_on_link": false,
+      "not_forwarded": false,
+      "unexpected": false,
+      "decisions": [
+        {
+          "layer": 1,
+          "inbound": true,
+          "description": "GigabitEthernet0/2 receives the frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame source MAC address was found in the MAC table of Switch."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The frame's destination MAC address matches the receiving port's MAC address, the broadcast address, or a multicast address."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The device decapsulates the PDU from the Ethernet frame."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The STP process receives a BPDU on GigabitEthernet0/2."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "This BPDU is a Rapid Spanning Tree BPDU."
+        },
+        {
+          "layer": 2,
+          "inbound": true,
+          "description": "The received BPDU contains repeated information."
+        }
+      ],
+      "traffic_type": "type11",
+      "status": "accepted"
+    }
+  ],
+  "summary": "⚠ 30 frame(s) no llegaron a destino. The destination IP is not the broadcast address and it does not match the port's IP address. The device drops the packet.; The destination IP is not the broadcast address and it does not match the port's IP address. The device drops the packet.; The destination IP is not the broadcast address and it does not match the port's IP address. The device drops the packet."
+}

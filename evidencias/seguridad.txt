@@ -1,0 +1,194 @@
+{
+  "secure": false,
+  "devices_audited": 13,
+  "counts": {
+    "high": 0,
+    "medium": 13,
+    "low": 13
+  },
+  "findings": [
+    {
+      "device": "ISP_BOG",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "ISP_ESP",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "ISP_FL",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "ISP_NET",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "MLSW_MAD",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "R1_BOG",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "R2_ESP",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "SW1_BOG",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "SW2_BOG",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "SW3_BOG",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "SW4_MAD",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "SW5_MAD",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "SW_DMZ",
+      "code": "ENABLE_SECRET_WEAK_ALGO",
+      "severity": "medium",
+      "message": "El `enable secret` usa MD5 (type 5), crackeable offline.",
+      "suggestion": "Si el IOS lo soporta, usá `enable algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "ISP_BOG",
+      "code": "USER_CREDENTIAL_WEAK_ALGO",
+      "severity": "low",
+      "message": "El usuario local 'admin' usa MD5 (type 5).",
+      "suggestion": "Si el IOS lo soporta: `username admin algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "ISP_ESP",
+      "code": "USER_CREDENTIAL_WEAK_ALGO",
+      "severity": "low",
+      "message": "El usuario local 'admin' usa MD5 (type 5).",
+      "suggestion": "Si el IOS lo soporta: `username admin algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "ISP_FL",
+      "code": "USER_CREDENTIAL_WEAK_ALGO",
+      "severity": "low",
+      "message": "El usuario local 'admin' usa MD5 (type 5).",
+      "suggestion": "Si el IOS lo soporta: `username admin algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "ISP_NET",
+      "code": "USER_CREDENTIAL_WEAK_ALGO",
+      "severity": "low",
+      "message": "El usuario local 'admin' usa MD5 (type 5).",
+      "suggestion": "Si el IOS lo soporta: `username admin algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "MLSW_MAD",
+      "code": "USER_CREDENTIAL_WEAK_ALGO",
+      "severity": "low",
+      "message": "El usuario local 'admin' usa MD5 (type 5).",
+      "suggestion": "Si el IOS lo soporta: `username admin algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "R1_BOG",
+      "code": "USER_CREDENTIAL_WEAK_ALGO",
+      "severity": "low",
+      "message": "El usuario local 'admin' usa MD5 (type 5).",
+      "suggestion": "Si el IOS lo soporta: `username admin algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "R2_ESP",
+      "code": "USER_CREDENTIAL_WEAK_ALGO",
+      "severity": "low",
+      "message": "El usuario local 'admin' usa MD5 (type 5).",
+      "suggestion": "Si el IOS lo soporta: `username admin algorithm-type scrypt secret <clave>`."
+    },
+    {
+      "device": "SW1_BOG",
+      "code": "NO_LOCAL_USERS",
+      "severity": "low",
+      "message": "No hay usuarios locales: no se puede exigir `login local` en VTY ni usar SSH.",
+      "suggestion": "Creá al menos un usuario con `username <user> secret <clave>`."
+    },
+    {
+      "device": "SW2_BOG",
+      "code": "NO_LOCAL_USERS",
+      "severity": "low",
+      "message": "No hay usuarios locales: no se puede exigir `login local` en VTY ni usar SSH.",
+      "suggestion": "Creá al menos un usuario con `username <user> secret <clave>`."
+    },
+    {
+      "device": "SW3_BOG",
+      "code": "NO_LOCAL_USERS",
+      "severity": "low",
+      "message": "No hay usuarios locales: no se puede exigir `login local` en VTY ni usar SSH.",
+      "suggestion": "Creá al menos un usuario con `username <user> secret <clave>`."
+    },
+    {
+      "device": "SW4_MAD",
+      "code": "NO_LOCAL_USERS",
+      "severity": "low",
+      "message": "No hay usuarios locales: no se puede exigir `login local` en VTY ni usar SSH.",
+      "suggestion": "Creá al menos un usuario con `username <user> secret <clave>`."
+    },
+    {
+      "device": "SW5_MAD",
+      "code": "NO_LOCAL_USERS",
+      "severity": "low",
+      "message": "No hay usuarios locales: no se puede exigir `login local` en VTY ni usar SSH.",
+      "suggestion": "Creá al menos un usuario con `username <user> secret <clave>`."
+    },
+    {
+      "device": "SW_DMZ",
+      "code": "NO_LOCAL_USERS",
+      "severity": "low",
+      "message": "No hay usuarios locales: no se puede exigir `login local` en VTY ni usar SSH.",
+      "suggestion": "Creá al menos un usuario con `username <user> secret <clave>`."
+    }
+  ],
+  "summary": "⚠ 0 hallazgo(s) alto(s), 13 medio(s), 13 bajo(s) en 13 dispositivo(s)."
+}

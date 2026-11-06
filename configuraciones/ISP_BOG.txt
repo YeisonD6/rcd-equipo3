@@ -1,0 +1,14 @@
+Exportación startup-config real vía pt_backup_config; no es transcripción show running-config.
+{
+  "found": true,
+  "supported": true,
+  "model": "2811",
+  "hostname": "ISP_BOG",
+  "serial": "FTX1017NI44-",
+  "config_register": 8450,
+  "uptime": 370299,
+  "boot_systems": "",
+  "startup_config": "!\nversion 12.4\nno service timestamps log datetime msec\nno service timestamps debug datetime msec\nservice password-encryption\n!\nhostname ISP_BOG\n!\n!\n!\nenable secret 5 $1$mERr$j4jSz8tq8MB380Pd.zgTx/\n!\n!\n!\n!\n!\n!\nno ip cef\nipv6 unicast-routing\n!\nno ipv6 cef\n!\n!\n!\nusername admin privilege 15 secret 5 $1$mERr$DTmHtGvJD1T.OQV9BxisU1\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip ssh version 2\nip domain-name mvydjdr.net\n!\n!\nspanning-tree mode pvst\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n no ip address\n ipv6 address 2001:1200:ED13::2/128\n!\ninterface FastEthernet0/0\n no ip address\n duplex auto\n speed auto\n shutdown\n!\ninterface FastEthernet0/1\n no ip address\n duplex auto\n speed auto\n shutdown\n!\ninterface Serial1/0\n description R1_BOG\n ip address 86.106.79.2 255.255.255.252\n ipv6 address 2001:1200:EC13:100::2/64\n!\ninterface Serial1/1\n description ISP_NET\n ip address 86.106.79.5 255.255.255.252\n clock rate 64000\n!\ninterface Serial1/2\n description ISP_FL\n ip address 86.106.79.17 255.255.255.252\n!\ninterface Serial1/3\n no ip address\n clock rate 2000000\n shutdown\n!\ninterface Vlan1\n no ip address\n shutdown\n!\nrouter eigrp 3\n network 86.106.79.0 0.0.0.3\n network 86.106.79.4 0.0.0.3\n no auto-summary\n!\nrouter ospf 3\n router-id 3.3.3.2\n log-adjacency-changes\n network 86.106.79.16 0.0.0.3 area 0\n distance ospf external 175\n!\nip classless\n!\nip flow-export version 9\n!\n!\n!\nbanner motd #ACCESO AUTORIZADO - PROYECTO RCD EQUIPO 3#\n!\n!\n!\n!\n!\nline con 0\n!\nline aux 0\n!\nline vty 0 4\n login local\n transport input ssh\n!\n!\n!\nend",
+  "startup_lines": 119,
+  "summary": "119 línea(s) de startup-config de 'ISP_BOG' (2811, serial FTX1017NI44-)."
+}

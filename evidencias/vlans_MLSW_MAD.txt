@@ -1,0 +1,54 @@
+{
+  "found": true,
+  "supported": true,
+  "max_vlans": 1005,
+  "vlan_interfaces": 5,
+  "vlans": [
+    {
+      "number": 1,
+      "name": "default",
+      "is_default": true
+    },
+    {
+      "number": 35,
+      "name": "NATIVE_MGMT",
+      "is_default": false
+    },
+    {
+      "number": 40,
+      "name": "VLAN0040",
+      "is_default": false
+    },
+    {
+      "number": 80,
+      "name": "VLAN0080",
+      "is_default": false
+    },
+    {
+      "number": 99,
+      "name": "VLAN0099",
+      "is_default": false
+    },
+    {
+      "number": 1002,
+      "name": "fddi-default",
+      "is_default": true
+    },
+    {
+      "number": 1003,
+      "name": "token-ring-default",
+      "is_default": true
+    },
+    {
+      "number": 1004,
+      "name": "fddinet-default",
+      "is_default": true
+    },
+    {
+      "number": 1005,
+      "name": "trnet-default",
+      "is_default": true
+    }
+  ],
+  "summary": "9 VLAN(s): 4 propia(s), 5 de fábrica. Máximo del modelo: 1005."
+}

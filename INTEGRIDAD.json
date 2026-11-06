@@ -1,0 +1,11 @@
+{
+  "preparacion": "2026-11-06",
+  "evidencia_funcional": "2026-11-02",
+  "pkt_modificado_localmente": "2026-11-04",
+  "pkt_bytes": 228256,
+  "pkt_sha256": "304a04fb3d98b84efb726a649e4236665ef73d990b7d3e0d5470f7beb52691e9",
+  "revalidacion_funcional_archivo_actual": "pendiente",
+  "running_configs": 13,
+  "escaneo_tokens_claves_privadas": [],
+  "nota": "Credenciales IOS, IPsec y SNMP son las del laboratorio y están documentadas en README."
+}

@@ -1,0 +1,146 @@
+=== Topology Export: 32 devices, 32 links ===
+
+  R1_BOG [2811] @ (407, 295)
+    FastEthernet0/0 [linked]
+    FastEthernet0/1 IP=10.3.10.1/255.255.255.0 [linked]
+    Serial1/0 IP=86.106.79.1/255.255.255.252 [linked]
+    FastEthernet0/0.35 IP=10.3.35.1/255.255.255.0
+    FastEthernet0/0.40 IP=10.3.40.1/255.255.255.0
+    FastEthernet0/0.80 IP=10.3.80.1/255.255.255.0
+    FastEthernet0/0.99 IP=10.3.99.1/255.255.255.0
+  Power Distribution Device0 [Power Distribution Device] @ (3892, 3885)
+  ISP_BOG [2811] @ (627, 155)
+    Serial1/0 IP=86.106.79.2/255.255.255.252 [linked]
+    Serial1/1 IP=86.106.79.5/255.255.255.252 [linked]
+    Serial1/2 IP=86.106.79.17/255.255.255.252 [linked]
+  ISP_NET [2811] @ (837, 75)
+    Serial1/0 IP=86.106.79.6/255.255.255.252 [linked]
+    Serial1/1 IP=86.106.79.9/255.255.255.252 [linked]
+    Serial1/2 IP=86.106.79.21/255.255.255.252 [linked]
+  ISP_FL [2811] @ (837, 235)
+    Serial1/0 IP=86.106.79.18/255.255.255.252 [linked]
+    Serial1/1 IP=86.106.79.14/255.255.255.252 [linked]
+    Serial1/2 IP=86.106.79.22/255.255.255.252 [linked]
+  ISP_ESP [2811] @ (1047, 155)
+    Serial1/0 IP=86.106.79.10/255.255.255.252 [linked]
+    Serial1/1 IP=86.106.79.13/255.255.255.252 [linked]
+    Serial1/2 IP=86.106.79.25/255.255.255.252 [linked]
+  R2_ESP [2811] @ (1257, 295)
+    FastEthernet0/0 IP=10.3.200.1/255.255.255.252 [linked]
+    Serial1/0 IP=86.106.79.26/255.255.255.252 [linked]
+  SW_DMZ [2960-24TT] @ (182, 338)
+    FastEthernet0/1 [linked]
+    FastEthernet0/2 [linked]
+    FastEthernet0/3 [linked]
+    GigabitEthernet0/1 [linked]
+    Vlan99 IP=10.3.99.14/255.255.255.0
+  SW1_BOG [2960-24TT] @ (462, 508)
+    FastEthernet0/24 [linked]
+    GigabitEthernet0/1 [linked]
+    GigabitEthernet0/2 [linked]
+    Vlan99 IP=10.3.99.11/255.255.255.0
+  SW2_BOG [2960-24TT] @ (352, 638)
+    FastEthernet0/1 [linked]
+    FastEthernet0/2 [linked]
+    FastEthernet0/3 [linked]
+    GigabitEthernet0/1 [linked]
+    GigabitEthernet0/2 [linked]
+    Vlan99 IP=10.3.99.12/255.255.255.0
+  SW3_BOG [2960-24TT] @ (612, 638)
+    FastEthernet0/1 [linked]
+    FastEthernet0/2 [linked]
+    FastEthernet0/3 [linked]
+    FastEthernet0/4 [linked]
+    GigabitEthernet0/1 [linked]
+    GigabitEthernet0/2 [linked]
+    Vlan99 IP=10.3.99.13/255.255.255.0
+  MLSW_MAD [3650-24PS] @ (1222, 482)
+    GigabitEthernet1/0/1 [linked]
+    GigabitEthernet1/0/2 [linked]
+    GigabitEthernet1/0/3 [linked]
+    Vlan35 IP=10.3.135.1/255.255.255.0
+    Vlan40 IP=10.3.140.1/255.255.255.0
+    Vlan80 IP=10.3.81.1/255.255.255.0
+    Vlan99 IP=10.3.199.1/255.255.255.0
+  SW4_MAD [2960-24TT] @ (1072, 638)
+    FastEthernet0/1 [linked]
+    FastEthernet0/2 [linked]
+    FastEthernet0/3 [linked]
+    GigabitEthernet0/1 [linked]
+    GigabitEthernet0/2 [linked]
+    Vlan99 IP=10.3.199.14/255.255.255.0
+  SW5_MAD [2960-24TT] @ (1362, 638)
+    FastEthernet0/1 [linked]
+    FastEthernet0/2 [linked]
+    FastEthernet0/3 [linked]
+    GigabitEthernet0/1 [linked]
+    GigabitEthernet0/2 [linked]
+    Vlan99 IP=10.3.199.15/255.255.255.0
+  Web_Server [Server-PT] @ (52, 234)
+    FastEthernet0 IP=10.3.10.80/255.255.255.0 [linked]
+  DNS_Server [Server-PT] @ (52, 344)
+    FastEthernet0 IP=10.3.10.53/255.255.255.0 [linked]
+  Tracker_Server [Server-PT] @ (52, 454)
+    FastEthernet0 IP=10.3.10.50/255.255.255.0 [linked]
+  Power Distribution Device1 [Power Distribution Device] @ (3892, 3885)
+  DHCP_Server [Server-PT] @ (262, 684)
+    FastEthernet0 IP=10.3.40.10/255.255.255.0 [linked]
+  PC1 [PC-PT] @ (317, 802)
+    FastEthernet0 IP=10.3.35.11/255.255.255.0 [linked]
+  PC2 [PC-PT] @ (417, 802)
+    FastEthernet0 IP=10.3.80.12/255.255.255.0 [linked]
+  PC3 [PC-PT] @ (577, 802)
+    FastEthernet0 IP=10.3.80.13/255.255.255.0 [linked]
+  PC4 [PC-PT] @ (677, 802)
+    FastEthernet0 IP=10.3.80.14/255.255.255.0 [linked]
+  PC5 [PC-PT] @ (1027, 802)
+    FastEthernet0 IP=10.3.135.15/255.255.255.0 [linked]
+  PC6 [PC-PT] @ (1127, 802)
+    FastEthernet0 IP=10.3.81.16/255.255.255.0 [linked]
+  PC7 [PC-PT] @ (1347, 802)
+    FastEthernet0 IP=10.3.81.17/255.255.255.0 [linked]
+  PC8 [PC-PT] @ (1447, 802)
+    FastEthernet0 IP=10.3.135.18/255.255.255.0 [linked]
+  Printer0 [Printer-PT] @ (723, 569)
+    FastEthernet0 IP=10.3.40.21/255.255.255.0 [linked]
+  Printer1 [Printer-PT] @ (743, 709)
+    FastEthernet0 IP=10.3.40.22/255.255.255.0 [linked]
+  Printer2 [Printer-PT] @ (973, 699)
+    FastEthernet0 IP=10.3.140.23/255.255.255.0 [linked]
+  Printer3 [Printer-PT] @ (1473, 699)
+    FastEthernet0 IP=10.3.140.24/255.255.255.0 [linked]
+  Beacon_Employee [Thing] @ (820, 820)
+
+--- Links ---
+  R1_BOG:Serial1/0  <-->  ISP_BOG:Serial1/0
+  ISP_BOG:Serial1/1  <-->  ISP_NET:Serial1/0
+  ISP_NET:Serial1/1  <-->  ISP_ESP:Serial1/0
+  ISP_ESP:Serial1/1  <-->  ISP_FL:Serial1/1
+  ISP_FL:Serial1/0  <-->  ISP_BOG:Serial1/2
+  ISP_NET:Serial1/2  <-->  ISP_FL:Serial1/2
+  ISP_ESP:Serial1/2  <-->  R2_ESP:Serial1/0
+  R1_BOG:FastEthernet0/0  <-->  SW1_BOG:GigabitEthernet0/1
+  R1_BOG:FastEthernet0/1  <-->  SW_DMZ:GigabitEthernet0/1
+  SW_DMZ:FastEthernet0/1  <-->  Web_Server:FastEthernet0
+  SW_DMZ:FastEthernet0/2  <-->  DNS_Server:FastEthernet0
+  SW_DMZ:FastEthernet0/3  <-->  Tracker_Server:FastEthernet0
+  SW1_BOG:GigabitEthernet0/2  <-->  SW2_BOG:GigabitEthernet0/1
+  SW1_BOG:FastEthernet0/24  <-->  SW3_BOG:GigabitEthernet0/1
+  SW2_BOG:GigabitEthernet0/2  <-->  SW3_BOG:GigabitEthernet0/2
+  SW2_BOG:FastEthernet0/1  <-->  DHCP_Server:FastEthernet0
+  SW2_BOG:FastEthernet0/2  <-->  PC1:FastEthernet0
+  SW2_BOG:FastEthernet0/3  <-->  PC2:FastEthernet0
+  SW3_BOG:FastEthernet0/1  <-->  PC3:FastEthernet0
+  SW3_BOG:FastEthernet0/2  <-->  PC4:FastEthernet0
+  SW3_BOG:FastEthernet0/3  <-->  Printer0:FastEthernet0
+  SW3_BOG:FastEthernet0/4  <-->  Printer1:FastEthernet0
+  R2_ESP:FastEthernet0/0  <-->  MLSW_MAD:GigabitEthernet1/0/1
+  MLSW_MAD:GigabitEthernet1/0/2  <-->  SW4_MAD:GigabitEthernet0/1
+  MLSW_MAD:GigabitEthernet1/0/3  <-->  SW5_MAD:GigabitEthernet0/1
+  SW4_MAD:GigabitEthernet0/2  <-->  SW5_MAD:GigabitEthernet0/2
+  SW4_MAD:FastEthernet0/1  <-->  PC5:FastEthernet0
+  SW4_MAD:FastEthernet0/2  <-->  PC6:FastEthernet0
+  SW4_MAD:FastEthernet0/3  <-->  Printer2:FastEthernet0
+  SW5_MAD:FastEthernet0/1  <-->  PC7:FastEthernet0
+  SW5_MAD:FastEthernet0/2  <-->  PC8:FastEthernet0
+  SW5_MAD:FastEthernet0/3  <-->  Printer3:FastEthernet0

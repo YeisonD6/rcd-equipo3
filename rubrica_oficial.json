@@ -1,0 +1,42 @@
+[
+  [
+    0.2,
+    "Comparar diseños de conexión de LANS, servicios, protocolos y equipos de red, involucrados en la topología de red propuesta, aplicando los conceptos de redes y comunicación de datos.",
+    "Analiza y evalúa minuciosamente varios diseños de conexiones LANS, servicios, protocolos y equipos de red, demostrando una comprensión profunda de las redes y los conceptos de comunicación de datos."
+  ],
+  [
+    null,
+    "Formular un esquema direccionamiento IPv4 e IPv6 para la topología de red propuesta, aplicando los conceptos de redes y comunicación de datos.",
+    "Formula un esquema de direccionamiento IPv4 e IPv6 para la topología de red propuesta, aplicando meticulosamente la guía de diseño estructurado. Documenta minuciosamente todo el proceso de desarrollo del esquema de direccionamiento IPv4 e IPv6 propuesto, proporcionando explicaciones claras y detalladas para cada paso, y completa con precisión las tablas de subredes y direccionamiento de la red."
+  ],
+  [
+    null,
+    "Argumentar los problemas de configuración y de validación presentados durante el desarrollo del laboratorio.",
+    "Argumenta eficazmente los problemas de configuración y validación encontrados en el desarrollo del laboratorio, distinguiendo claramente los problemas por capas TCP/IP. Sus argumentos están bien respaldados con un análisis en profundidad y conocimientos técnico."
+  ],
+  [
+    0.3,
+    " Simular en Packet Tracer la topología de red empresarial propuesta teniendo en cuenta el esquema de direccionamiento, los servicios y protocolos red seleccionados.",
+    "Demuestra una comprensión excepcional de los conceptos de redes y comunicación de datos, y sus diseños de red simulados son muy sofisticados y reflejan con precisión escenarios del mundo real. Su uso de Cisco Packet Tracer es ejemplar y muestra habilidades avanzadas en simulación y configuración de redes."
+  ],
+  [
+    0.1,
+    "Evaluar los resultados de la experimentación y plantear conclusiones usando el juicio de ingeniería, involucrando conceptos de redes y comunicación de datos.",
+    "Demuestra una capacidad excepcional para analizar los resultados de la experimentación, sacar conclusiones precisas y justificar el análisis mediante capturas con Cisco Packet Tracer, Packet Simulator y Packet Filters."
+  ],
+  [
+    0.1,
+    "Presentar y sustentar de forma clara, concisa y organizada el desarrollo de la experimentación mediante un video de calidad dentro del tiempo establecido.",
+    "Su video presenta de manera efectiva y clara el desarrollo de la experimentación de una manera bien organizada y concisa dentro del límite de tiempo dado, demostrando un alto nivel de habilidad y comprensión."
+  ],
+  [
+    0.1,
+    "Realizar una documentación en forma de wiki en Bitbucket/github con un contenido coherente, ordenado, sin errores ortográficos y gramaticales, utilizando normas IEEE para citaciones y referencias.",
+    "Su documentación en Bitbucket/github es excepcionalmente coherente, está bien organizada y no contiene errores ortográficos y gramaticales. Aplica sistemáticamente los estándares IEEE para citas y referencias a lo largo de tu trabajo."
+  ],
+  [
+    0.2,
+    "Contribuir al desarrollo de las actividades propias del rol asignado dentro del equipo de trabajo empleando un acta de reunión y evaluación.",
+    "Demuestra capacidad excepcional para planificar el desarrollo de proyectos o la práctica de laboratorio, promoviendo eficazmente la comunicación asertiva para el intercambio de ideas y el trabajo en equipo. Utiliza constantemente las actas de las reuniones para una coordinación eficiente del trabajo."
+  ]
+]

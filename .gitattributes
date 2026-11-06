@@ -1,0 +1,8 @@
+*.pkt binary
+*.xlsx binary
+*.pdf binary
+*.png binary
+*.md text eol=lf
+*.js text eol=lf
+*.py text eol=lf
+*.txt text eol=lf

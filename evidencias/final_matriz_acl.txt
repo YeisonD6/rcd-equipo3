@@ -1,0 +1,24 @@
+Prueba con IPv6 estática de compatibilidad, tras inicializar el proyecto. TCP state 3=establecido; 0/1=sin conexión establecida. La matriz IPv6 cumple la política. Guest MAD IPv4 no validado.
+PC1:
+10.3.10.80:80 state=3
+10.3.10.80:443 state=1
+2001:1200:EC13:10::80:80 state=3
+2001:1200:EC13:10::80:443 state=1
+
+PC4:
+10.3.10.80:80 state=1
+10.3.10.80:443 state=3
+2001:1200:EC13:10::80:80 state=1
+2001:1200:EC13:10::80:443 state=3
+
+PC5:
+10.3.10.80:80 state=1
+10.3.10.80:443 state=1
+2001:1200:EC13:10::80:80 state=3
+2001:1200:EC13:10::80:443 state=1
+
+PC7:
+10.3.10.80:80 state=1
+10.3.10.80:443 state=3
+2001:1200:EC13:10::80:80 state=1
+2001:1200:EC13:10::80:443 state=3

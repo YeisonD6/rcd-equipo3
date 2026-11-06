@@ -1,0 +1,14 @@
+Exportación startup-config real vía pt_backup_config; no es transcripción show running-config.
+{
+  "found": true,
+  "supported": true,
+  "model": "2960-24TT",
+  "hostname": "SW3_BOG",
+  "serial": "CAT1010G95Y-",
+  "config_register": 15,
+  "uptime": 372496,
+  "boot_systems": "",
+  "startup_config": "!\nversion 12.2\nno service timestamps log datetime msec\nno service timestamps debug datetime msec\nservice password-encryption\n!\nhostname SW3_BOG\n!\nenable secret 5 $1$mERr$j4jSz8tq8MB380Pd.zgTx/\n!\n!\n!\nip ssh version 2\nip domain-name mvydjdr.net\n!\nusername admin secret 5 $1$mERr$DTmHtGvJD1T.OQV9BxisU1\n!\n!\n!\nspanning-tree mode rapid-pvst\nspanning-tree extend system-id\n!\ninterface FastEthernet0/1\n switchport access vlan 80\n switchport mode access\n spanning-tree portfast\n spanning-tree bpduguard enable\n!\ninterface FastEthernet0/2\n switchport access vlan 80\n switchport mode access\n spanning-tree portfast\n spanning-tree bpduguard enable\n!\ninterface FastEthernet0/3\n switchport access vlan 40\n switchport mode access\n spanning-tree portfast\n spanning-tree bpduguard enable\n!\ninterface FastEthernet0/4\n switchport access vlan 40\n switchport mode access\n spanning-tree portfast\n spanning-tree bpduguard enable\n!\ninterface FastEthernet0/5\n!\ninterface FastEthernet0/6\n!\ninterface FastEthernet0/7\n!\ninterface FastEthernet0/8\n!\ninterface FastEthernet0/9\n!\ninterface FastEthernet0/10\n!\ninterface FastEthernet0/11\n!\ninterface FastEthernet0/12\n!\ninterface FastEthernet0/13\n!\ninterface FastEthernet0/14\n!\ninterface FastEthernet0/15\n!\ninterface FastEthernet0/16\n!\ninterface FastEthernet0/17\n!\ninterface FastEthernet0/18\n!\ninterface FastEthernet0/19\n!\ninterface FastEthernet0/20\n!\ninterface FastEthernet0/21\n!\ninterface FastEthernet0/22\n!\ninterface FastEthernet0/23\n!\ninterface FastEthernet0/24\n!\ninterface GigabitEthernet0/1\n switchport trunk native vlan 99\n switchport trunk allowed vlan 35\n40\n80\n99\n switchport mode trunk\n!\ninterface GigabitEthernet0/2\n switchport trunk native vlan 99\n switchport trunk allowed vlan 35\n40\n80\n99\n switchport mode trunk\n!\ninterface Vlan1\n no ip address\n shutdown\n!\ninterface Vlan99\n ip address 10.3.99.13 255.255.255.0\n!\nip default-gateway 10.3.99.1\n!\nbanner motd #ACCESO AUTORIZADO - PROYECTO RCD EQUIPO 3#\n!\n!\nsnmp-server community RCD3-RO RO\nsnmp-server community RCD3-RW RW\n!\naccess-list 80 permit 10.3.80.0 0.0.0.255\nline con 0\n!\nline vty 0 4\n login local\n transport input ssh\nline vty 5 15\n login\n!\n!\n!\n!\nend",
+  "startup_lines": 130,
+  "summary": "130 línea(s) de startup-config de 'SW3_BOG' (2960-24TT, serial CAT1010G95Y-)."
+}

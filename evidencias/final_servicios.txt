@@ -1,0 +1,18 @@
+PC1:[{"address":"2001:1200:EA13:35:290:CFF:FE54:1E2B","prefix":64,"type":3}]
+PC2:[{"address":"2001:1200:EA13:80:230:F2FF:FEAB:4DE8","prefix":64,"type":3}]
+PC3:[{"address":"2001:1200:EA13:80:202:4AFF:FE75:8822","prefix":64,"type":3}]
+PC4:[{"address":"2001:1200:EA13:80:2E0:8FFF:FE39:CED8","prefix":64,"type":3}]
+PC5:[{"address":"2001:1200:EB23:35:20A:F3FF:FEB7:EE7C","prefix":64,"type":3}]
+PC6:[{"address":"2001:1200:EB23:80:20C:CFFF:FE8A:4519","prefix":64,"type":3}]
+PC7:[{"address":"2001:1200:EB23:80:2D0:97FF:FEB0:8794","prefix":64,"type":3}]
+PC8:[{"address":"2001:1200:EB23:35:2E0:B0FF:FE49:32DA","prefix":64,"type":3}]
+Web_Server:[{"address":"2001:1200:EC13:10::80","prefix":64,"type":0}]
+DNS_Server:[{"address":"2001:1200:EC13:10::53","prefix":64,"type":0}]
+Tracker_Server:[{"address":"2001:1200:EC13:10::50","prefix":64,"type":0}]
+DHCP_Server:[{"address":"2001:1200:EA13:40:201:42FF:FEAB:E947","prefix":64,"type":3}]
+DNS:{"class":1,"dateTime":"","ipAddress":"10.3.10.80","isAnsRecord":false,"length":4,"name":"mvydjdr.net","pduSize":0,"pduType":"DnsRrA","ttl":86400,"type":1}
+DNS:{"class":1,"dateTime":"","ipAddress":"2001:1200:EC13:10::80","isAnsRecord":false,"length":16,"name":"mvydjdr.net","pduSize":0,"pduType":"DnsRrAv6","ttl":86400,"type":28}
+DNS:{"class":1,"dateTime":"","ipAddress":"10.3.10.80","isAnsRecord":false,"length":4,"name":"www.mvydjdr.net","pduSize":0,"pduType":"DnsRrA","ttl":86400,"type":1}
+HTTP_ENABLED=true
+PAGE=<!doctype html><html lang='es'><head><meta charset='utf-8'><title>RCD Equipo 3</title></head><body bgcolor='#edf3fb'><h1>mvydjdr.net</h1><h2>Red empresarial Bogota - Madrid</h2><p>Proyecto final RCD - Equipo 3</p><p>Juan David Rubio, Yeison David Nino y Miguel Medina</p><p>IPv6, EIGRP, OSPF, IPsec, ACL y Employee Tracker</p></body></html>
+HTTPS_ENABLED=true

@@ -1,0 +1,17 @@
+PC1 → 10.3.35.1: CONECTIVIDAD OK
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+PC4 → 10.3.81.17: CONECTIVIDAD OK
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+PC7 → 10.3.80.14: CONECTIVIDAD OK
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+PC7 → 10.3.10.50: CONECTIVIDAD OK
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+PC7 → 2001:1200:EC13:10::80: SIN CONECTIVIDAD
+Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+R1_BOG → 86.106.79.26: CONECTIVIDAD OK
+Success rate is 100 percent (5/5)

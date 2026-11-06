@@ -1,0 +1,873 @@
+{
+  "devices_inspected": 32,
+  "ports_total": 34,
+  "ports_up": 34,
+  "ports_linked": 34,
+  "anomalies": [],
+  "devices": [
+    {
+      "name": "R1_BOG",
+      "model": "2811",
+      "ports": [
+        {
+          "name": "FastEthernet0/0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "0.0.0.0",
+          "mask": "0.0.0.0",
+          "mac": "0050.0F73.9501",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": 100,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "FastEthernet0/1",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.10.1",
+          "mask": "255.255.255.0",
+          "mac": "0050.0F73.9502",
+          "description": "DMZ_IPV6",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": 100,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "Serial1/0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.1",
+          "mask": "255.255.255.252",
+          "mac": "0050.0F73.9501",
+          "description": "WAN_ISP_BOG",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        }
+      ]
+    },
+    {
+      "name": "Power Distribution Device0",
+      "model": "Power Distribution Device",
+      "ports": []
+    },
+    {
+      "name": "ISP_BOG",
+      "model": "2811",
+      "ports": [
+        {
+          "name": "Serial1/0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.2",
+          "mask": "255.255.255.252",
+          "mac": "00D0.58BA.1B01",
+          "description": "R1_BOG",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "Serial1/1",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.5",
+          "mask": "255.255.255.252",
+          "mac": "00D0.58BA.1B01",
+          "description": "ISP_NET",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "Serial1/2",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.17",
+          "mask": "255.255.255.252",
+          "mac": "00D0.58BA.1B01",
+          "description": "ISP_FL",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        }
+      ]
+    },
+    {
+      "name": "ISP_NET",
+      "model": "2811",
+      "ports": [
+        {
+          "name": "Serial1/0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.6",
+          "mask": "255.255.255.252",
+          "mac": "0002.16C2.8701",
+          "description": "ISP_BOG",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "Serial1/1",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.9",
+          "mask": "255.255.255.252",
+          "mac": "0002.16C2.8701",
+          "description": "ISP_ESP",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "Serial1/2",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.21",
+          "mask": "255.255.255.252",
+          "mac": "0002.16C2.8701",
+          "description": "ISP_FL",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        }
+      ]
+    },
+    {
+      "name": "ISP_FL",
+      "model": "2811",
+      "ports": [
+        {
+          "name": "Serial1/0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.18",
+          "mask": "255.255.255.252",
+          "mac": "00D0.BA17.8101",
+          "description": "ISP_BOG",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "Serial1/1",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.14",
+          "mask": "255.255.255.252",
+          "mac": "00D0.BA17.8101",
+          "description": "ISP_ESP",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "Serial1/2",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.22",
+          "mask": "255.255.255.252",
+          "mac": "00D0.BA17.8101",
+          "description": "ISP_NET",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        }
+      ]
+    },
+    {
+      "name": "ISP_ESP",
+      "model": "2811",
+      "ports": [
+        {
+          "name": "Serial1/0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.10",
+          "mask": "255.255.255.252",
+          "mac": "000C.855B.9601",
+          "description": "ISP_NET",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "Serial1/1",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.13",
+          "mask": "255.255.255.252",
+          "mac": "000C.855B.9601",
+          "description": "ISP_FL",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "Serial1/2",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.25",
+          "mask": "255.255.255.252",
+          "mac": "000C.855B.9601",
+          "description": "R2_ESP",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        }
+      ]
+    },
+    {
+      "name": "R2_ESP",
+      "model": "2811",
+      "ports": [
+        {
+          "name": "FastEthernet0/0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.200.1",
+          "mask": "255.255.255.252",
+          "mac": "0002.1612.E401",
+          "description": "MLSW_MAD_TRANSIT",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": 100,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        },
+        {
+          "name": "Serial1/0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "86.106.79.26",
+          "mask": "255.255.255.252",
+          "mac": "0002.1612.E401",
+          "description": "ISP_ESP",
+          "duplex_full": true,
+          "bandwidth_kbps": 1544,
+          "mtu": 1500,
+          "delay": 20000,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        }
+      ]
+    },
+    {
+      "name": "SW_DMZ",
+      "model": "2960-24TT",
+      "ports": []
+    },
+    {
+      "name": "SW1_BOG",
+      "model": "2960-24TT",
+      "ports": []
+    },
+    {
+      "name": "SW2_BOG",
+      "model": "2960-24TT",
+      "ports": []
+    },
+    {
+      "name": "SW3_BOG",
+      "model": "2960-24TT",
+      "ports": []
+    },
+    {
+      "name": "MLSW_MAD",
+      "model": "3650-24PS",
+      "ports": [
+        {
+          "name": "GigabitEthernet1/0/1",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.200.2",
+          "mask": "255.255.255.252",
+          "mac": "0006.2A0B.6D01",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": 100,
+          "cdp": true,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "none"
+        }
+      ]
+    },
+    {
+      "name": "SW4_MAD",
+      "model": "2960-24TT",
+      "ports": []
+    },
+    {
+      "name": "SW5_MAD",
+      "model": "2960-24TT",
+      "ports": []
+    },
+    {
+      "name": "Web_Server",
+      "model": "Server-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.10.80",
+          "mask": "255.255.255.0",
+          "mac": "000C.CFD9.27E6",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "DNS_Server",
+      "model": "Server-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.10.53",
+          "mask": "255.255.255.0",
+          "mac": "0001.C949.A37B",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "Tracker_Server",
+      "model": "Server-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.10.50",
+          "mask": "255.255.255.0",
+          "mac": "00D0.5841.4B3D",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "Power Distribution Device1",
+      "model": "Power Distribution Device",
+      "ports": []
+    },
+    {
+      "name": "DHCP_Server",
+      "model": "Server-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.40.10",
+          "mask": "255.255.255.0",
+          "mac": "0001.42AB.E947",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "PC1",
+      "model": "PC-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.35.11",
+          "mask": "255.255.255.0",
+          "mac": "0090.0C54.1E2B",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "PC2",
+      "model": "PC-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.80.12",
+          "mask": "255.255.255.0",
+          "mac": "0030.F2AB.4DE8",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "PC3",
+      "model": "PC-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.80.13",
+          "mask": "255.255.255.0",
+          "mac": "0002.4A75.8822",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "PC4",
+      "model": "PC-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.80.14",
+          "mask": "255.255.255.0",
+          "mac": "00E0.8F39.CED8",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "PC5",
+      "model": "PC-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.135.15",
+          "mask": "255.255.255.0",
+          "mac": "000A.F3B7.EE7C",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "PC6",
+      "model": "PC-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.81.16",
+          "mask": "255.255.255.0",
+          "mac": "000C.CF8A.4519",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "PC7",
+      "model": "PC-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.81.17",
+          "mask": "255.255.255.0",
+          "mac": "00D0.97B0.8794",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "PC8",
+      "model": "PC-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.135.18",
+          "mask": "255.255.255.0",
+          "mac": "00E0.B049.32DA",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "Printer0",
+      "model": "Printer-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.40.21",
+          "mask": "255.255.255.0",
+          "mac": "0001.96BE.4BEC",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "Printer1",
+      "model": "Printer-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.40.22",
+          "mask": "255.255.255.0",
+          "mac": "0004.9A91.6E48",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "Printer2",
+      "model": "Printer-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.140.23",
+          "mask": "255.255.255.0",
+          "mac": "00E0.F747.50D9",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "Printer3",
+      "model": "Printer-PT",
+      "ports": [
+        {
+          "name": "FastEthernet0",
+          "up": true,
+          "protocol_up": true,
+          "linked": true,
+          "ip": "10.3.140.24",
+          "mask": "255.255.255.0",
+          "mac": "000A.41D5.DC0D",
+          "description": "",
+          "duplex_full": true,
+          "bandwidth_kbps": 100000,
+          "mtu": 1500,
+          "delay": null,
+          "cdp": null,
+          "dhcp_client": false,
+          "wireless": false,
+          "acl_in": "",
+          "acl_out": "",
+          "nat_mode": "unknown(None)"
+        }
+      ]
+    },
+    {
+      "name": "Beacon_Employee",
+      "model": "Thing",
+      "ports": []
+    }
+  ],
+  "summary": "✅ 34/34 puerto(s) up, 34 cableado(s), sin anomalías."
+}
