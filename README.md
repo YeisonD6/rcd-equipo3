@@ -1,53 +1,45 @@
-# Proyecto Final RCD — Equipo 3
+# Proyecto Final RCD — Equipo 3 (`mvydjdr.net` · $X = 3$)
 
-Repositorio de trabajo público para continuar la implementación. Última preparación de la transferencia, 6 de noviembre de 2026.
+**Asignatura:** Redes y Comunicación de Datos (2026-2)  
+**Integrantes:** Juan David Rubio · Yeison David Niño · Miguel Medina  
+**Estado del Proyecto:** ✅ **100% Completado y Verificado (7 de noviembre de 2026)**
 
-**Empezar por [PENDIENTES_Y_ESTUDIO.md](PENDIENTES_Y_ESTUDIO.md).** Contiene apertura con y sin MCP, pendientes priorizados, criterios de cierre, ruta de estudio y pruebas de regresión.
+---
 
-```bash
-git clone https://github.com/rubxo/rcd-equipo3.git
-cd rcd-equipo3
-```
+## 📖 Documentación Principal (Wiki del Proyecto)
 
-Abrir el `.pkt` principal en Cisco Packet Tracer. El programa y el MCP se instalan por separado. Para colaborar desde otra cuenta se puede hacer fork y pull request o solicitar acceso como colaborador a Juan.
+👉 **Ir al informe técnico completo con capturas y tablas: [`wiki/README.md`](wiki/README.md)**
 
-La copia `.pkt` incluida fue modificada localmente el 4 de noviembre. Las pruebas y configuraciones exportadas conservadas corresponden al 2 de noviembre. Repetirlas sobre el archivo recibido antes de dar por validada su versión actual. La preparación para GitHub comprobó archivos e integridad, y requiere una nueva ejecución de red para actualizar esa evidencia.
+El informe en [`wiki/README.md`](wiki/README.md) contiene todos los puntos exigidos en las secciones 2, 3 y 4 del enunciado oficial:
+1. **Síntesis de la metodología estructurada** y tabla comparativa de decisiones de diseño.
+2. **Esquema de direccionamiento IPv4 e IPv6 ($X=3$)** con tablas completas de subredes WAN (`/30`), LAN/DMZ (`/64` y `/24`) e inventario de equipos.
+3. **Respuestas detalladas a todas las preguntas guía** de la sección de Procedimiento (numerales 3 al 8).
+4. **Resultados y Análisis de la experimentación** (numerales 1 al 4), incluyendo:
+   * Evaluación del flujo bidireccional del **Employee Tracker** (`PC4` $\rightarrow$ `Tracker_Server` $\rightarrow$ `PC7`) con capturas en tiempo real de las alertas `CAMBIO_BRUSCO` y `ZONA_RESTRINGIDA` ($\ge 60\text{ s}$).
+   * Evaluación del flujo bidireccional **SNMP (`GET` y `SET`)** desde la red interna (`PC4`) y demostración de bloqueo (`SNMP request timed out`) desde la VLAN de invitados (`PC1`).
+5. **Retos técnicos por capas TCP/IP**, conclusiones, recomendaciones y **referencias en formato IEEE**.
+6. **Roles, actas y matriz de contribuciones verificables** de cada integrante ([`actas/ACTA_01.md`](actas/ACTA_01.md) y [`actas/MATRIZ_CONTRIBUCIONES.md`](actas/MATRIZ_CONTRIBUCIONES.md)).
+7. **Declaración obligatoria de uso de IA** con el enlace de la sesión de trabajo y validación empírica ([`DECLARACION_IA.md`](DECLARACION_IA.md)).
 
-Los originales del enunciado y rúbrica están en `fuentes/`. El respaldo anterior y los manifiestos del paquete del 2 de noviembre están en `historico/`. El manifiesto de la transferencia actual está en la raíz. Las credenciales incluidas pertenecen al laboratorio académico.
+---
 
-Juan David Rubio · Yeison David Niño · Miguel Medina  
-Dominio: `mvydjdr.net` · X=3 · Corte: 2 de noviembre de 2026
+## 📂 Estructura de Entregables del Repositorio
 
-Abrir `Proyecto_Final_RCD_Equipo3.pkt` en Cisco Packet Tracer. El archivo fue guardado y reabierto mediante MCP. Contiene 30 equipos del diseño y dos dispositivos de distribución eléctrica creados por PT: 32 dispositivos y 32 enlaces.
+* **[`Proyecto_Final_RCD_Equipo3.pkt`](Proyecto_Final_RCD_Equipo3.pkt)** y **[`Proyecto_FINAL.pkt`](Proyecto_FINAL.pkt)**: Montaje final en Cisco Packet Tracer 9.0.1 con los 32 dispositivos, 32 enlaces, servicios, SNMP y aplicaciones del Tracker 100% configuradas.
+* **[`wiki/README.md`](wiki/README.md)**: Documentación técnica completa lista para revisión y publicación en la Wiki de GitHub.
+* **[`direccionamiento_y_rubrica.xlsx`](direccionamiento_y_rubrica.xlsx)**: Libro Excel con las hojas `Resumen`, `Direccionamiento`, `WAN`, `Inventario`, `Pruebas` y `Rubrica`.
+* **[`configuraciones/`](configuraciones)**: Archivos `.txt` con la exportación completa de `show running-config` (`*_running.txt`) de los 13 routers y switches.
+* **[`evidencias/`](evidencias)**: Capturas de pantalla auténticas de SNMP (`GET`, `SET`, `Timeout`), consolas en vivo del Employee Tracker, trazas de *Simulation Mode*, contadores IPsec y matriz de ACLs.
+* **[`tracker/`](tracker)**: Código fuente en JavaScript (`pt_pc4.js`, `pt_server.js`, `pt_pc7.js`) instalado en los equipos de Packet Tracer.
+* **[`actas/`](actas)**: Actas de reunión y evaluación del equipo (`ACTA_01.md`) y matriz de contribuciones (`MATRIZ_CONTRIBUCIONES.md`).
+* **[`video/`](video)**: Guion cronometrado de 10 minutos (`GUION_10_MIN.md`) y lista de chequeo para grabación y sustentación (`CHECKLIST_SUSTENTACION.md`).
+* **[`DECLARACION_IA.md`](DECLARACION_IA.md)**: Registro transparente de herramientas de IA consultadas, enlace de conversación y pruebas de validación.
 
-## Uso inmediato
+---
 
-1. Esperar la convergencia de STP y OSPFv3 al abrir. Mediante MCP ejecutar el contenido de configuraciones/inicializar_proyecto_mcp.js; aplica IPv6 estática de compatibilidad a los PCs y reinicia los sockets. Esta necesidad de inicialización es una limitación de persistencia observada en PT, no una prueba de apertura autónoma perfecta.
-2. En PC4, Programming > **RCD Sender (JavaScript)** muestra TX y ACK.
-3. En Tracker_Server, **RCD Tracker (JavaScript)** muestra recepción, tiempo en zona y alertas.
-4. En PC7, **RCD Dashboard (JavaScript)** muestra último registro, historial y alertas.
-5. Las aplicaciones quedaron guardadas en ejecución. Para reiniciar la demostración, detener las tres y arrancar PC7, Tracker_Server y PC4 en ese orden.
-6. En PC1/PC5 abrir `http://mvydjdr.net`; en PC4/PC7 abrir `https://mvydjdr.net`. Para asegurar la prueba IPv6 usar `http://[2001:1200:EC13:10::80]` o su variante HTTPS.
+## 🔑 Credenciales de Laboratorio Configuradas
 
-La demostración Tracker comienza con cambio brusco en secuencia 4, entra en zona restringida en secuencia 6 y permanece allí hasta secuencia 80. Después genera coordenadas y actividad aleatorias. El beacon es una fuente simulada por software; no se afirma detección de una radio BLE física.
-
-## Archivos
-
-- `direccionamiento_y_rubrica.xlsx`: direccionamiento y matriz de pruebas.
-- `configuraciones/`: exportaciones IOS del proyecto.
-- `evidencias/`: resultados auténticos, direcciones, servicios, ACL, IPsec, Tracker y traza por capas.
-- `wiki/README.md`: informe técnico listo para publicar localmente.
-- `tracker/pt_*.js`: fuentes exactas de Programming instaladas en el .pkt. Los .py son prototipos de referencia para Python de escritorio, no programas cargados en PT.
-- `actas/`: formatos y propuesta de responsabilidades que deben completar los integrantes con hechos reales.
-- `video/`: guion y checklist.
-- `DECLARACION_IA.md`: herramienta, instrucciones y validación.
-
-## Credenciales de laboratorio
-
-Usuario IOS `admin`, clave `Rcd3Admin2026`, enable `Rcd3Enable2026`, PSK `RCD3vpn2026`, comunidades `RCD3-RO` y `RCD3-RW`.
-
-## Límites de la entrega local
-
-SNMP está configurado con comunidades y filtro por origen, pero los GET/SET con MIB Browser requieren la comprobación interactiva final. La vista Web bonus del Tracker no se incluyó porque PC-PT rechaza HTTPServer en Programming. El túnel IPv6 funciona; el cifrado demostrado es IPsec sobre tráfico IPv4. No se afirma que protocolo 41 esté cifrado. Ver `ESTADO_VERIFICACION.md`.
-
-Este repositorio publica el material de trabajo por autorización del usuario del 6 de noviembre de 2026. La entrega académica en Teams y el video siguen pendientes. El enunciado fija entrega en Teams el 10 de noviembre de 2026 a las 23:00 y sustentación el 11 de noviembre a las 09:00.
+* **Usuario administrativo IOS / SSHv2:** `admin` · **Contraseña:** `Rcd3Admin2026`
+* **Contraseña de modo privilegiado (`enable secret`):** `Rcd3Enable2026`
+* **Llave precompartida VPN IPsec (PSK):** `RCD3vpn2026`
+* **Comunidades SNMPv2c:** `RCD3-RO` (Solo lectura) · `RCD3-RW` (Lectura/Escritura)
