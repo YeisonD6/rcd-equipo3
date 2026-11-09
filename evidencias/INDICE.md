@@ -1,5 +1,7 @@
 # Índice de Evidencias de Verificación — Equipo 3
 
+[Validación del 8 de noviembre](../wiki/EVIDENCIAS_VALIDACION_2026-11-08.md) · [Cierre BLE/TCP](../wiki/CIERRE_FUNCIONAL_2026-11-08.md) · [Índice de capturas y hashes](../INDICE_CAPTURAS.csv)
+
 Evidencia real capturada en Cisco Packet Tracer 9.0.1 (cortes del 2 y 7 de noviembre de 2026).
 
 | Archivo en `evidencias/` | Descripción y Alcance de la Prueba |
