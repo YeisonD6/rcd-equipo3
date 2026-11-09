@@ -1,9 +1,14 @@
 # Proyecto Final — Diseño e Implementación de una Red Empresarial (Equipo 3)
 
+
+> **Actualización de validación — 08/11/2026:** la documentación histórica de este archivo describe versiones anteriores del Employee Tracker. La variante actual transmite lecturas sintéticas por Bluetooth **desde el beacon**, PC4 las reenvía por TCP y PC7 recibe alertas. Consultar [cierre funcional](CIERRE_FUNCIONAL_2026-11-08.md) y [capturas 08/11](EVIDENCIAS_VALIDACION_2026-11-08.md). No interpretar pruebas IPsec IPv4 como demostración de cifrado del túnel IPv6.
+
 **Asignatura:** Redes y Comunicación de Datos (2026-2)  
 **Integrantes:** Juan David Rubio · Yeison David Niño · Miguel Medina  
 **Parámetro de Equipo:** $X = 3$ · **Dominio Corporativo:** `mvydjdr.net`  
-**Archivo de Simulación:** [`Proyecto_Final_RCD_Equipo3.pkt`](../Proyecto_Final_RCD_Equipo3.pkt) / [`Proyecto_FINAL.pkt`](../Proyecto_FINAL.pkt)
+**Montaje de entrega:** [`Proyecto_RCD_Final.pkt`](../Proyecto_RCD_Final.pkt). Se conservan [la copia anterior](../Proyecto_Final_RCD_Equipo3.pkt) y [el montaje histórico alternativo](../Proyecto_FINAL.pkt).
+
+[Estado y alcance](../ESTADO_FINAL_2026-11-08.md) · [Operación](SERVICIOS_MANUALES.md) · [Exportaciones](../configuraciones/README.md) · [Evidencias](EVIDENCIAS_VALIDACION_2026-11-08.md) · [Declaración de IA](../DECLARACION_IA.md)
 
 ![Topología General implementada en Cisco Packet Tracer](final_topologia.png)
 
@@ -31,7 +36,7 @@ Para garantizar un diseño escalable, seguro y verificable en Cisco Packet Trace
 | **Redundancia LAN en Switches** | Topología en árbol simple vs. Topología en anillo/triángulo con STP | **Triángulo redundante con `Rapid-PVST+`:** Evita puntos únicos de falla en el cableado horizontal y previene tormentas de broadcast bloqueando lógicamente un puerto alternativo mientras converge en segundos ante caídas. |
 | **Asignación de Direcciones IPv6** | Estática pura, DHCPv6 Stateful o SLAAC + DHCPv6 Stateless | **SLAAC + DHCPv6 Stateless (`other-config-flag`) + Respaldo Estático:** Los routers anuncian el prefijo `/64` mediante mensajes RA (`RFC 4862`) [3] y entregan el servidor DNS (`2001:1200:EC13:10::53`) y el dominio `mvydjdr.net` por DHCPv6 sin estado. |
 | **Mecanismo de Transición IPv6 sobre WAN IPv4** | Doble pila en todo el ISP, Túnel GRE o Túnel Manual `ipv6ip` (Protocolo 41) | **Túnel `ipv6ip` (`Tunnel0`) entre `R1_BOG` y `R2_ESP`:** Permite transportar paquetes IPv6 nativos y adyacencias `OSPFv3` [4] sobre un núcleo ISP puramente IPv4 sin requerir soporte IPv6 en los proveedores intermedios (`ISP_BOG`, `ISP_NET`, `ISP_FL`, `ISP_ESP`). |
-| **Seguridad en el Transporte WAN y Acceso** | Solo ACLs perimetrales vs. Defensa en profundidad (ACLs + VPN IPsec + SNMP ACL + SSHv2) | **Defensa en profundidad:** `IPsec` (`ESP AES-256 + SHA-1`) cifra el tráfico inter-sede [5], `WEB-DMZ` segrega HTTP/HTTPS por rol de usuario y `SNMP-INTERNAL` restringe el plano de gestión exclusivamente a la VLAN 80. |
+| **Seguridad en el Transporte WAN y Acceso** | Solo ACLs perimetrales vs. Defensa en profundidad (ACLs + VPN IPsec + SNMP ACL + SSHv2) | **Defensa en profundidad:** `IPsec` (`ESP AES-256 + SHA-1`) protege el tráfico IPv4 seleccionado entre sedes [5], `WEB-DMZ` segrega HTTP/HTTPS por rol de usuario y `SNMP-INTERNAL` restringe el plano de gestión exclusivamente a la VLAN 80. |
 
 ---
 
@@ -101,7 +106,7 @@ Para las intranets se reemplazó $X = 3$ en los prefijos `/48` del enunciado, as
 ### Pregunta 3: Asignación de Direccionamiento
 > **¿Qué método(s) de asignación se debe(n) configurar? ¿En qué terminales se deben configurar los servicios requeridos?**
 
-* **En los terminales de usuario (`PC1` a `PC8`):** Se utiliza asignación dinámica mediante **SLAAC (Stateless Address Autoconfiguration)** combinado con **DHCPv6 Stateless** (`ipv6 nd other-config-flag` y `ipv6 dhcp server` en `R1_BOG` y `MLSW_MAD`) para aprender el prefijo `/64`, el gateway por Router Advertisements (RA) y los parámetros de DNS (`2001:1200:EC13:10::53`) y dominio (`mvydjdr.net`). En IPv4, `DHCP_Server` (`10.3.40.10`) entrega direcciones mediante agentes de retransmisión (`ip helper-address 10.3.40.10`) configurados en las subinterfaces de `R1_BOG` y en las SVIs de `MLSW_MAD`. *(Como medida de persistencia ante la recarga del archivo `.pkt` en Packet Tracer, se documentan también las direcciones IPv6 fijas `::11` a `::18`).*
+* **En los terminales de usuario (`PC1` a `PC8`):** Se utiliza asignación dinámica mediante **SLAAC (Stateless Address Autoconfiguration)** combinado con **DHCPv6 Stateless** (`ipv6 nd other-config-flag` y `ipv6 dhcp server` en `R1_BOG` y `MLSW_MAD`) para aprender el prefijo `/64`, el gateway por Router Advertisements (RA) y, mediante DHCPv6 sin estado, los parámetros de DNS (`2001:1200:EC13:10::53`) y dominio (`mvydjdr.net`). En IPv4, `DHCP_Server` (`10.3.40.10`) entrega direcciones mediante agentes de retransmisión (`ip helper-address 10.3.40.10`) configurados en las subinterfaces de `R1_BOG` y en las SVIs de `MLSW_MAD`. *(Como medida de persistencia ante la recarga del archivo `.pkt` en Packet Tracer, se documentan también las direcciones IPv6 fijas `::11` a `::18`).*
 * **En servidores (`Web_Server`, `DNS_Server`, `Tracker_Server`, `DHCP_Server`), interfaces de routers y SVIs de gestión (`VLAN 99`):** Se debe configurar **direccionamiento estático**, ya que alojan servicios críticos que son referenciados por reglas de firewall (ACLs), registros DNS (`A` y `AAAA`), sockets TCP y agentes de monitoreo SNMP.
 
 ### Pregunta 4: Filtrado de Paquetes Web, DNS y Dominio
@@ -119,7 +124,7 @@ Para las intranets se reemplazó $X = 3$ en los prefijos `/48` del enunciado, as
 > **¿En qué interfaces se deben configurar enlaces "Trunks" IEEE 802.1Q, OSPF o EIGRP, OSPFv3 y redistribución entre protocolos?**
 
 * **Enlaces Troncales IEEE 802.1Q (`switchport mode trunk`, `native vlan 99`, `allowed vlan 35,40,80,99`):**
-  * **Sede Bogotá:** En el enlace `SW1_BOG (Fa0/24)` $\leftrightarrow$ `R1_BOG (Fa0/0)` y en todos los enlaces inter-switch del triángulo redundante (`Gi0/1` y `Gi0/2` entre `SW1_BOG`, `SW2_BOG` y `SW3_BOG`).
+  * **Sede Bogotá:** En el enlace `SW1_BOG (Gi0/1)` $\leftrightarrow$ `R1_BOG (Fa0/0)` y en los enlaces del triángulo redundante. El [inventario histórico](../evidencias/final_exportacion.txt) identifica `Fa0/24` de SW1_BOG como el enlace a SW3_BOG.
   * **Sede Madrid:** En todos los enlaces inter-switch del triángulo formado por `MLSW_MAD` (`Gi1/0/2`, `Gi1/0/3`), `SW4_MAD` (`Gi0/1`, `Gi0/2`) y `SW5_MAD` (`Gi0/1`, `Gi0/2`).
 * **Protocolos de Enrutamiento IPv4:**
   * **EIGRP AS 3:** Configurado en `R1_BOG` (redes LAN y enlace serial `S1/0`), `ISP_BOG` (`S1/0`, `S1/1`), `ISP_NET` (`S1/0`, `S1/1`, `S1/2`), `ISP_FL` (`S1/2`), `ISP_ESP` (`S1/0`, `S1/2`) y `R2_ESP` (`S1/0` + redistribución de rutas estáticas hacia Madrid).
@@ -133,14 +138,18 @@ Para las intranets se reemplazó $X = 3$ en los prefijos `/48` del enunciado, as
 > **¿Qué servicio(s) de migración se debe(n) implementar para permitir el acceso al servidor Web en la DMZ IPv6 a través de Internet IPv4? ¿Qué servicios se deben configurar para tener una comunicación segura entre las Intranets? ¿Dónde se deben configurar?**
 
 * **Servicio de Migración IPv6:** Se implementó un **Túnel Manual IPv6-sobre-IPv4 (`tunnel mode ipv6ip`, Protocolo IP 41)** en la interfaz **`Tunnel0`** entre los routers de borde **`R1_BOG`** (origen `Serial1/0` `86.106.79.1`, destino `86.106.79.26`, IP `2001:1200:ED13:300::1/64`) y **`R2_ESP`** (origen `Serial1/0` `86.106.79.26`, destino `86.106.79.1`, IP `2001:1200:ED13:300::2/64`). Esto encapsula los paquetes IPv6 dentro de cabeceras IPv4 para atravesar transparentemente la nube ISP IPv4.
-* **Servicio de Comunicación Segura:** Se configuró un túnel **VPN IPsec Site-to-Site** con **IKEv1 (ISAKMP Policy 10)**: cifrado **`AES-256`**, hash **`SHA-1`**, autenticación por llave precompartida (**PSK `RCD3vpn2026`**), Diffie-Hellman **Grupo 2** y **Transform-Set `RCD3-SET` (`esp-aes 256 esp-sha-hmac`)**.
+* **Servicio de Comunicación Segura:** Se configuró un túnel **VPN IPsec Site-to-Site** con **IKEv1 (ISAKMP Policy 10)**: cifrado **`AES-256`**, hash **`SHA-1`**, autenticación por llave precompartida (**PSK**), Diffie-Hellman **Grupo 2** y **Transform-Set `RCD3-SET` (`esp-aes 256 esp-sha-hmac`)**.
 * **Ubicación:** El `crypto map RCD3-MAP` se aplica en las interfaces físicas de salida hacia la WAN pública: **`Serial1/0` de `R1_BOG`** y **`Serial1/0` de `R2_ESP`**.
+
+El [registro de IPsec](../evidencias/validacion_2026-11-08/05_tracker_bluetooth/r1_ipsec_esp_activa.txt) respalda ESP para el selector IPv4 observado. El cifrado del protocolo 41 y una DMZ completamente IPv6 siguen sin demostración.
 
 ### Pregunta 7: Gestión de Red con SNMP
 > **¿Qué servicio debe configurar para denegar el uso de SNMP a las demás VLANs?**
 
-* Se habilitó el agente **SNMPv2c** en todos los routers y switches de ambas sedes con dos comunidades: **`RCD3-RO`** (Solo Lectura / *Read-Only*) y **`RCD3-RW`** (Lectura y Escritura / *Read-Write*).
+* El diseño de gestión usa **SNMPv2c** con dos comunidades: **`RCD3-RO`** (Solo Lectura / *Read-Only*) y **`RCD3-RW`** (Lectura y Escritura / *Read-Write*).
 * Para denegar el uso de SNMP a las VLANs no autorizadas (Guest 35, Services 40, Management 99 y WAN externa), se configuró la **Lista de Control de Acceso Extendida `SNMP-INTERNAL`**, que permite únicamente datagramas **UDP hacia el puerto `161` (`eq snmp`)** cuyo origen sea la subred **Internal de Bogotá (`10.3.80.0/24`)** o **Internal de Madrid (`10.3.81.0/24`)**, seguida de la sentencia explícita **`deny udp any any eq snmp`** y `permit ip any any` para el resto del tráfico. Esta ACL se aplicó en sentido entrante (`in`) en las subinterfaces de `R1_BOG`, en las SVIs de `MLSW_MAD` y en los puertos seriales WAN.
+
+En Madrid, el acceso de PC7 a R2_ESP se documentó después de ajustar la ACL de retorno. Consulte el [GET/SET y el diagnóstico del switch multicapa](EVIDENCIAS_VALIDACION_2026-11-08.md#3-snmp-v2-operaciones-y-acceso-en-madrid).
 
 ### Pregunta 8: Servicios Adicionales Requeridos
 > **Si requiere algún servicio adicional para el funcionamiento correcto de la red empresarial, presente y justifique el servicio requerido.**
@@ -154,6 +163,10 @@ Para las intranets se reemplazó $X = 3$ en los prefijos `/48` del enunciado, as
 ## 4. Resultados y Análisis de la Experimentación
 
 ### 4.1. Montaje, Configuración y Validación de Protocolos y Servicios (Punto 2)
+
+La tabla conserva las comprobaciones históricas. La [matriz Web de 16 casos](EVIDENCIAS_VALIDACION_2026-11-08.md#2-acl-web-ipv4-e-ipv6-matriz-de-16-pruebas) y el [cierre funcional](CIERRE_FUNCIONAL_2026-11-08.md) documentan los resultados posteriores.
+
+![PC4 con IPv6 automático y DNS IPv6](../evidencias/validacion_2026-11-08/01_ipv6/pc4_slaac_ipv6_automatico.png)
 
 | Prueba Realizada | Origen $\rightarrow$ Destino | Protocolo / Herramienta | Resultado Obtenido | Estado |
 |---|---|---|---|---|
@@ -169,11 +182,23 @@ Para las intranets se reemplazó $X = 3$ en los prefijos `/48` del enunciado, as
 
 ### 4.2. Evaluación del Flujo Bidireccional de la Solución "Employee Tracker" (Punto 3)
 
-La solución **Employee Tracker** implementa una arquitectura cliente-servidor-relay distribuida en tres nodos a través de la red empresarial LAN-WAN utilizando **sockets TCP en JavaScript**:
+**Variante BLE de entrega.** Beacon_Employee genera lecturas sintéticas y las envía por Bluetooth a PC4. PC4 recibe y reenvía la trama por TCP al Tracker_Server (5000). El servidor devuelve un ACK de aplicación a PC4 y, con la conexión a PC7 disponible, reenvía el evento al Dashboard (5001). Ese ACK acredita recepción por el servidor. La recepción en el Dashboard se verifica por separado en su consola.
+
+| Evidencia | Observación |
+|---|---|
+| [Beacon y PC4](../evidencias/validacion_2026-11-08/05_tracker_bluetooth/bluetooth_beacon_pc4.txt) | PC4 recibió el mensaje de prueba del beacon. |
+| [Puente TCP](../evidencias/validacion_2026-11-08/05_tracker_bluetooth/pc4_tcp_ack_cambio_brusco.txt) | Reenvío de lecturas y ACK con `CAMBIO_BRUSCO`. |
+| [Dashboard](../evidencias/validacion_2026-11-08/05_tracker_bluetooth/pc7_dashboard_zona_restringida.txt) | Recepción de eventos y alerta `ZONA_RESTRINGIDA`. |
+
+#### Variante histórica con RCD Sender
+
+Las capturas y el análisis de PDUs siguientes corresponden a la variante previa. En ella PC4 generaba la telemetría sintética. La [variante BLE](CIERRE_FUNCIONAL_2026-11-08.md) se respalda con las transcripciones de la tabla.
+
+La variante histórica del **Employee Tracker** usa tres nodos a través de la red empresarial LAN-WAN utilizando **sockets TCP en JavaScript**:
 
 1. **Generación y Emisión en `PC4` (`RCD Sender` — Bogotá VLAN 80, `10.3.80.14`):**
    * Abre un socket `TCPClient` hacia `Tracker_Server` en la DMZ (`10.3.10.50`, puerto **TCP `5000`**).
-   * Cada segundo lee la telemetría del beacon simulado (`EMP-001`) y transmite una trama delimitada por salto de línea con el formato:
+   * Cada segundo genera telemetría sintética (`EMP-001`) y transmite una trama delimitada por salto de línea con el formato:
      ```text
      EMP-001|<secuencia>|<timestamp>|<x>|<y>|<actividad>\n
      ```
@@ -209,6 +234,18 @@ La solución **Employee Tracker** implementa una arquitectura cliente-servidor-r
 
 ### 4.3. Explicación y Evidencia del Flujo Bidireccional SNMP (`GET`, `SET` y Bloqueo por ACL) (Punto 4)
 
+#### Madrid (8 de noviembre)
+
+PC7 (`10.3.81.17`) envió las consultas al agente `R2_ESP` (`10.3.200.1`) por UDP/161. La respuesta del agente sale de UDP/161 hacia el puerto de origen del gestor. Tras aplicar la excepción de retorno reportada en `MLSW_MAD`, PC7 obtuvo `sysName.0 = R2_ESP`, escribió `sysLocation.0` y verificó el valor con otro GET. PC5 obtuvo timeout. Los contadores de la ACL respaldan el filtrado agregado. La PDU de PC7 hacia el propio `MLSW_MAD` llegó al switch y la sesión registró timeout, con causa aún indeterminada.
+
+![PC7 obtiene sysName.0 de R2_ESP](../evidencias/validacion_2026-11-08/03_snmp/pc7_get_sysname_r2_esp_exitoso.png)
+
+![PC7 confirma sysLocation.0 con un GET posterior](../evidencias/validacion_2026-11-08/03_snmp/pc7_get_syslocation_verificacion.png)
+
+[Secuencia GET/SET, prueba de invitado y diagnóstico en Simulation Mode](EVIDENCIAS_VALIDACION_2026-11-08.md#3-snmp-v2-operaciones-y-acceso-en-madrid)
+
+#### Bogotá (evidencia histórica)
+
 El protocolo **SNMP (Simple Network Management Protocol)** opera en la capa de aplicación sobre **UDP puerto 161** (consultas hacia el agente) siguiendo un flujo solicitud-respuesta entre el **Gestor (*SNMP Manager*, MIB Browser en el PC)** y el **Agente (*SNMP Agent*, router o switch IOS)** [6]:
 
 1. **Operación `SNMP GET` desde la Red Interna Autorizada (`PC4` - `10.3.80.14` $\rightarrow$ `R1_BOG` - `10.3.80.1`):**
@@ -240,6 +277,9 @@ El protocolo **SNMP (Simple Network Management Protocol)** opera en la capa de a
 
 ## 5. Retos Técnicos Presentados y Soluciones Aplicadas (Análisis por Capas TCP/IP)
 
+- **Bluetooth y TCP.** Se separó la prueba de recepción BLE de la del socket. Cuando el Tracker seguía devolviendo ACK y PC7 dejó de recibir, se comprobó el puerto 5001 localmente y se reprodujo el timeout desde el servidor. Reabrir Packet Tracer y arrancar PC7 → Tracker → PC4 → Beacon restableció el flujo. La [incidencia](CIERRE_FUNCIONAL_2026-11-08.md#2-incidencia-resuelta-durante-la-validación) deja abierta la causa raíz.
+- **Retorno SNMP en Madrid.** El ajuste de la ACL de tránsito fue seguido por GET/SET exitosos hacia R2_ESP. La [consulta directa al MLSW](EVIDENCIAS_VALIDACION_2026-11-08.md#4-diagnóstico--consulta-directa-a-mlsw_mad-pendiente) conserva su timeout como resultado de diagnóstico.
+
 | Capa TCP/IP | Problema Encontrado durante el Desarrollo | Causa Raíz Identificada | Solución de Ingeniería Aplicada |
 |---|---|---|---|
 | **Capa 2 (Acceso a Red)** | Pérdida aparente de VLANs en archivos exportados de `startup-config` | El serializador interno de Packet Tracer corta líneas con comas en el JSON de exportación | Se verificó en vivo con `show interfaces trunk` y `show vlan brief` (`evidencias/vlans_*.txt`), confirmando las VLANs `35,40,80,99` activas en los 7 switches. |
@@ -255,8 +295,8 @@ El protocolo **SNMP (Simple Network Management Protocol)** opera en la capa de a
 ### Conclusiones
 1. **Integración Exitosa de Arquitecturas Heterogéneas:** Se demostró la interoperabilidad completa entre dos arquitecturas LAN empresariales distintas (*Router-on-a-Stick* en Bogotá y *Multilayer Switching L3 con SVIs* en Madrid) interconectadas a través de un núcleo WAN multiprotocolo (`EIGRP AS 3` y `OSPFv2 Proceso 3`), logrando convergencia sin bucles mediante el control de la distancia administrativa (`AD = 175`) en el nodo de frontera `ISP_FL`.
 2. **Transición gradual hacia IPv6:** La implementación del túnel manual `ipv6ip` (`Tunnel0`) junto con `OSPFv3` permitió conectar islas IPv6 nativas (`2001:1200:EA13::/48`, `2001:1200:EB23::/48` y la DMZ `2001:1200:EC13:10::/64`) a través de una infraestructura de proveedor exclusivamente IPv4, validando el acceso a servicios `DNS` (`AAAA`) y `HTTP/HTTPS` sin modificar el core de los ISPs.
-3. **Seguridad Multicapa Verificada:** La combinación de túneles `IPsec` (`ESP AES-256 / SHA-1`) en el borde WAN, listas de acceso de aplicación (`WEB-DMZ`) en la entrada de la DMZ y filtros de gestión (`SNMP-INTERNAL`) garantizó tanto la confidencialidad de los datos en tránsito como el principio de mínimo privilegio por rol de VLAN (Guest vs. Internal).
-4. **Telemetría TCP en Tiempo Real:** El desarrollo en JavaScript del sistema **Employee Tracker** comprobó en la práctica cómo las aplicaciones de monitoreo industrial e IoT se apoyan en sockets TCP persistentes (`puertos 5000 y 5001`), acuses de recibo de capa de aplicación (`ACK`) y máquinas de estado temporales para detectar condiciones críticas de seguridad física (`CAMBIO_BRUSCO` y permanencia $\ge 60\text{ s}$ en `ZONA_RESTRINGIDA`).
+3. **Alcance de los controles de seguridad:** Los contadores ESP respaldan el cifrado para el selector IPv4 observado. Las 16 pruebas Web respaldan el filtrado por rol en ambos protocolos. Las pruebas SNMP delimitan el acceso en los equipos ensayados y dejan abierta la consulta directa a MLSW_MAD.
+4. **Telemetría Bluetooth y TCP:** El desarrollo en JavaScript del sistema **Employee Tracker** permitió observar recepción Bluetooth, reenvío, ACK de aplicación y alertas mediante sockets TCP (`puertos 5000 y 5001`), acuses de recibo de capa de aplicación (`ACK`) y máquinas de estado temporales para detectar condiciones críticas de seguridad física (`CAMBIO_BRUSCO` y permanencia $\ge 60\text{ s}$ en `ZONA_RESTRINGIDA`).
 
 ### Recomendaciones de Ingeniería
 1. **Migración a Certificados Digitales y SNMPv3 en Producción:** En un despliegue físico con equipos Cisco IOS-XE reales, se recomienda reemplazar las llaves precompartidas (PSK) de IPsec por certificados X.509 (`PKI`) con `IKEv2`, y migrar de `SNMPv2c` a **`SNMPv3` (`authPriv`)** para cifrar las credenciales de gestión en tránsito.
@@ -266,6 +306,8 @@ El protocolo **SNMP (Simple Network Management Protocol)** opera en la capa de a
 ---
 
 ## 7. Roles, Actividades y Contribuciones del Equipo
+
+Asignaciones y evidencias consignadas en las actas. El paquete del 8 de noviembre no identifica responsables individuales de cada captura.
 
 | Integrante | Rol Asignado | Actividades Específicas y Contribuciones Verificables | Archivos y Evidencias Asociadas |
 |---|---|---|---|
@@ -286,10 +328,11 @@ En cumplimiento del numeral 4.6 de la guía del proyecto final, el equipo declar
    * **Google Gemini (Asistente de programación y documentación en el entorno de trabajo)**
 2. **Enlace Público de Conversación y Registro de Instrucciones:**
    * **Enlace compartido de la sesión de trabajo en ChatGPT:** [https://chatgpt.com/s/cx_6aee127155d48191abedc299873f795d](https://chatgpt.com/s/cx_6aee127155d48191abedc299873f795d)
-   * **Detalle completo de prompts e instrucciones enviadas:** Documentado en [`DECLARACION_IA.md`](../DECLARACION_IA.md). Las consultas abarcaron la estructuración del plan de direccionamiento con $X=3$, la sintaxis de redistribución EIGRP/OSPF sin bucles, la programación de sockets TCP en la API JavaScript de Packet Tracer (`TCPClient`/`TCPServer`), la corrección de las comunidades SNMP en `SW1_BOG`, `R2_ESP` y `MLSW_MAD`, y la estructuración del reporte técnico bajo normas IEEE.
+   * **Conversación de auditoría del 8 de noviembre:** [ChatGPT](https://chatgpt.com/share/6af11005-fd58-83e9-b77f-858093f84483).
+   * **Registro de prompts e instrucciones enviadas:** Documentado en [`DECLARACION_IA.md`](../DECLARACION_IA.md). Las consultas abarcaron la estructuración del plan de direccionamiento con $X=3$, la sintaxis de redistribución EIGRP/OSPF sin bucles, la programación de sockets TCP en la API JavaScript de Packet Tracer (`TCPClient`/`TCPServer`), la corrección de las comunidades SNMP en `SW1_BOG`, `R2_ESP` y `MLSW_MAD`, y la estructuración del reporte técnico bajo normas IEEE.
 3. **Proceso de Validación y Aplicación por parte del Equipo:**
-   * Ninguna configuración o fragmento de código generado por la IA fue asumido como válido sin comprobación empírica en el simulador.
-   * El equipo validó cada resultado en Cisco Packet Tracer 9.0.1 mediante:
+   * El equipo contrastó las propuestas mediante pruebas específicas. El [registro detallado](../DECLARACION_IA.md#4-auditoría-del-8-de-noviembre) distingue los resultados observados y las propuestas descartadas.
+   * Las comprobaciones históricas en Cisco Packet Tracer 9.0.1 incluyen:
      * Inspección de tablas de enrutamiento (`show ip route`, `show ipv6 route`) y adyacencias (`show ip ospf neighbor`, `show ipv6 ospf neighbor`).
      * Identificación y corrección de limitaciones reales del simulador (por ejemplo, el ajuste de sintaxis de `snmp-server community RCD3-RO RO` en switches 2960 que no admiten número de ACL al final en PT, y la ruta específica `10.3.81.0/24` fuera del bloque sumarizado `/17` en Madrid).
      * Ejecución interactiva de pruebas en el **MIB Browser** (`GET`, `SET` y confirmación de `Request timed out` desde la VLAN de invitados) y verificación en tiempo real de las consolas del **Employee Tracker** hasta superar los 60 segundos continuos en zona restringida.

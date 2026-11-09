@@ -1,3 +1,5 @@
+> **Nota histórica:** este estado representa verificaciones anteriores a la integración BLE final. Consulte [ESTADO_FINAL_2026-11-08.md](ESTADO_FINAL_2026-11-08.md) para resultados posteriores y reservas explícitas.
+
 # Estado de Verificación Final — 7 de noviembre de 2026
 
 ## 1. Resumen de Pruebas Verificadas en Cisco Packet Tracer 9.0.1
