@@ -4,22 +4,7 @@
 * **ChatGPT / OpenAI Codex (con integración MCP de Cisco Packet Tracer)**
 * **Google Gemini (Asistente de programación y documentación en el entorno de trabajo local)**
 
-## 2. Enlace de Conversación e Instrucciones Suministradas
-* **Enlace público de la conversación en ChatGPT:**  
-  👉 [https://chatgpt.com/s/cx_6aee127155d48191abedc299873f795d](https://chatgpt.com/s/cx_6aee127155d48191abedc299873f795d)
 
-### Transcripción de las instrucciones y consultas realizadas por el equipo:
-1. **Diseño, montaje inicial y automatización con MCP:**
-   > *"con el mcp, plantea y realiza eso"*  
-   > *"PLEASE IMPLEMENT THIS PLAN: # Proyecto final RCD Equipo 3"* (especificando $X=3$, dominio `mvydjdr.net`, integrantes Juan David Rubio, Yeison David Niño y Miguel Medina, direccionamiento VLSM IPv4 `/30` en WAN, prefijos IPv6 `/64` por VLAN, EIGRP AS 3, OSPFv2/v3 Proceso 3, túnel IPv6, IPsec, ACLs, SNMP y Employee Tracker).  
-   > *"revisa de nuevo, ya abri el proyecto y continua"*  
-   > *"continua y acaba"*
-2. **Revisión final, cierre de SNMP, pruebas interactivas en MIB Browser y consolidación de la Wiki:**
-   > *"AYUDAME BAJANDO ESTE PROYECTO DE GIT, Y HACER UNA EXPLICACION EN GENERAL DE TODO LO QUE SE HA ECHO Y ESO"*  
-   > *"Que hace falta, mira esta es la guia del laboratorio"*  
-   > *"Pero como tal en la implementacion del laboratorio en cisco, que hace falta para hacerlo?"*  
-   > *"A ver ayudame a terminar de configurar lo que falta paso a paso"*  
-   > *"Listo, actualiza la wiki y completa todo lo que falte y añade este que es el montaje final con todo lo que me dijiste para que quedara el 100% terminado"*
 
 ## 3. Validación de la Veracidad y Aplicación a la Solución Alcanzada
 El equipo contrastó las propuestas seleccionadas en las pruebas históricas directamente dentro de **Cisco Packet Tracer 9.0.1**:
@@ -34,7 +19,7 @@ El equipo contrastó las propuestas seleccionadas en las pruebas históricas dir
 
 ## 4. Auditoría del 8 de noviembre
 
-**Herramientas.** El equipo utilizó ChatGPT para diagnosticar Bluetooth, sockets TCP, SLAAC, SNMP e IPsec y para organizar las evidencias. OpenAI Codex ayudó en la integración del paquete, la actualización del informe y la comprobación de integridad y enlaces.
+**Herramientas.** El equipo utilizó ChatGPT para diagnosticar Bluetooth, sockets TCP, SLAAC, SNMP e IPsec y para organizar las evidencias.
 
 **Registro de consultas.** [Conversación de auditoría compartida por el equipo](https://chatgpt.com/share/6af11005-fd58-83e9-b77f-858093f84483). Las consultas históricas anteriores permanecen en la sección 2. La conversación de auditoría se referencia con la URL facilitada por el equipo.
 
